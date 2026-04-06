@@ -1,0 +1,26 @@
+[
+  {
+    "model": "current_local",
+    "R2": 0.9431993832712643,
+    "Ljung-Box_p": 0.22942532147844713,
+    "RMSE": 0.023832879962089288,
+    "MAE": 0.01906630396967143,
+    "falsifiability_passed": true
+  },
+  {
+    "model": "gpt4",
+    "R2": 0.9243150784400382,
+    "Ljung-Box_p": 0.21260198177747988,
+    "RMSE": 0.027510892671805794,
+    "MAE": 0.022008714137444634,
+    "falsifiability_passed": true
+  },
+  {
+    "model": "claude3",
+    "R2": 0.9450079577564274,
+    "Ljung-Box_p": 0.26315581872614274,
+    "RMSE": 0.02345038213837305,
+    "MAE": 0.01876030571069844,
+    "falsifiability_passed": true
+  }
+]

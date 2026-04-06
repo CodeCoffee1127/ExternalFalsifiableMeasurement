@@ -1,0 +1,2052 @@
+{
+  "metadata": {
+    "experiment_id": "EXP025-v3",
+    "timestamp": "20260331_201120",
+    "data_source": "Original D_test",
+    "n_samples": 100
+  },
+  "layer1": {
+    "passed": false,
+    "stop_early": false,
+    "metrics": {
+      "smd_results": {
+        "table_count": {
+          "value": 0.20000000000000023,
+          "passed": false
+        },
+        "join_count": {
+          "value": 3.1599483590465205,
+          "passed": false
+        },
+        "predicate_count": {
+          "value": 0.5143392717671701,
+          "passed": false
+        },
+        "ast_node_count": {
+          "value": 0.4299664169765563,
+          "passed": false
+        },
+        "query_length": {
+          "value": 0.4299664169765563,
+          "passed": false
+        }
+      },
+      "mean_smd": 0.9468440929533608,
+      "hc3_violation_diff": {
+        "rate_a": 0.2,
+        "rate_b": 0.84,
+        "difference_pp": 63.99999999999999,
+        "stop_early": false
+      }
+    },
+    "conclusion": "FAIL: Surface complexity confounding not excluded."
+  },
+  "layer2": null,
+  "layer3": null,
+  "samples": {
+    "condition_a": [
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.12169614440362003,
+        "I_minus": 0.23759779942039014,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8962167049808125,
+        "I_minus": 0.21584985808480994,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5717823414994717,
+        "I_minus": 0.09595116859266878,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0155",
+        "query": "SELECT T1.horsepower FROM CARS_DATA AS T1 ORDER BY T1.accelerate DESC LIMIT 1;",
+        "db_id": "car_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 26.0,
+          "query_length": 26.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.07043094256259846,
+        "I_minus": 0.529620255535114,
+        "ast_hash": "fe9b9e121b85"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5195583768545907,
+        "I_minus": 0.4164398397733873,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.4238204377620728,
+        "I_minus": 0.10747452881994696,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.3511246972200697,
+        "I_minus": 0.41820379162292687,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.4121465894569616,
+        "I_minus": 0.44297108797694695,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.39637040249744687,
+        "I_minus": 0.13844331102259336,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.3413625335826967,
+        "I_minus": 0.31598328611035775,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.20836382223541822,
+        "I_minus": 0.3925168680496884,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.20235755680205755,
+        "I_minus": 0.19718828425098103,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6939744905837009,
+        "I_minus": 0.4052092091357918,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.3362181130762166,
+        "I_minus": 0.301947209148152,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5680163682854253,
+        "I_minus": 0.18362525604217753,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.06453104158929066,
+        "I_minus": 0.28257222825011047,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.09403788950452623,
+        "I_minus": 0.2614231879185014,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.45999112459218816,
+        "I_minus": 0.10779762894444035,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5929070263259174,
+        "I_minus": 0.13874104130187803,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.14396891697598024,
+        "I_minus": 0.26076828367939686,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.60259451430427,
+        "I_minus": 0.06287000920818059,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.27522444814616936,
+        "I_minus": 0.3027162426588332,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.17256639717469693,
+        "I_minus": 0.09122108710527499,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.7120223957612644,
+        "I_minus": 0.014356205249786787,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.06512904126279737,
+        "I_minus": 0.29833294634876745,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.03258533220696289,
+        "I_minus": 0.3719858209101608,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.6655423686504907,
+        "I_minus": 0.10938176199298975,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.3958083161057874,
+        "I_minus": 0.157629551151359,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6463797058550801,
+        "I_minus": 0.4273194066100575,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.604818373822031,
+        "I_minus": 0.16210236517644597,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.04994892988309003,
+        "I_minus": 0.380204921673101,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.1252209236350102,
+        "I_minus": 0.1848733649677859,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.2643057580152413,
+        "I_minus": 0.29445131189400825,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7415034038515461,
+        "I_minus": 0.3035799317373851,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.4790814954367918,
+        "I_minus": 0.1562453893416961,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.14450693934762926,
+        "I_minus": 0.08717725221570374,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5941361754819652,
+        "I_minus": 0.3133282687883219,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.289277502997486,
+        "I_minus": 0.08784565504567218,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.2577678575698489,
+        "I_minus": 0.40303389669621786,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.2265316060423598,
+        "I_minus": 0.1702930886433772,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8314251842038708,
+        "I_minus": 0.1629619351676133,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.4383859453713406,
+        "I_minus": 0.2472100959007492,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.21205830577213058,
+        "I_minus": 0.15180561110790222,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6652090571050304,
+        "I_minus": 0.2922830679709604,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.19462553671724123,
+        "I_minus": 0.25418374818260314,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0061",
+        "query": "SELECT major ,  age FROM student WHERE stuid NOT IN (SELECT T1.stuid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid JOIN pets AS T3 ON T3.petid  =  T2.petid WHERE T3.pettype  =  'cat')",
+        "db_id": "pets_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 9.0,
+          "ast_node_count": 92.0,
+          "query_length": 92.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8534857744219593,
+        "I_minus": 0.3530325428524942,
+        "ast_hash": "5d7b1a867f21"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.26492424284906063,
+        "I_minus": 0.035217098708323714,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0799",
+        "query": "SELECT sum(Population) ,  avg(LifeExpectancy) ,  Continent FROM country GROUP BY Continent HAVING avg(LifeExpectancy)  <  72",
+        "db_id": "world_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 40.0,
+          "query_length": 40.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.10538518551110045,
+        "I_minus": 0.10927860919891061,
+        "ast_hash": "3618abc55211"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.05173928500530729,
+        "I_minus": 0.1141678399554265,
+        "ast_hash": "3be23e49219b"
+      },
+      {
+        "query_id": "spider_dev_0914",
+        "query": "SELECT avg(grade) FROM Highschooler WHERE id IN (SELECT T1.student_id FROM Friend AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id)",
+        "db_id": "network_1",
+        "condition": "A",
+        "ast_depth": 1,
+        "has_scope_crossing": false,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 0.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.6602457224545007,
+        "I_minus": 0.27796060445536724,
+        "ast_hash": "3be23e49219b"
+      }
+    ],
+    "condition_b": [
+      {
+        "query_id": "spider_dev_0356",
+        "query": "SELECT T2.template_id FROM Ref_template_types AS T1 JOIN Templates AS T2 ON T1.template_type_code  = T2.template_type_code WHERE T1.template_type_description  =  \"Presentation\"",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 46.0,
+          "query_length": 46.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.45787677087324385,
+        "I_minus": 0.6180638078155177,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0175",
+        "query": "select t1.id ,  t1.maker from car_makers as t1 join model_list as t2 on t1.id  =  t2.maker group by t1.id having count(*)  >=  2 intersect select t1.id ,  t1.maker from car_makers as t1 join model_list as t2 on t1.id  =  t2.maker join car_names as t3 on t2.model  =  t3.model group by t1.id having count(*)  >  3;",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 3.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 148.0,
+          "query_length": 148.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8609499853135192,
+        "I_minus": 0.8900219957505551,
+        "ast_hash": "17efa35d7019"
+      },
+      {
+        "query_id": "spider_dev_0401",
+        "query": "SELECT T3.Name ,  T2.Course FROM course_arrange AS T1 JOIN course AS T2 ON T1.Course_ID  =  T2.Course_ID JOIN teacher AS T3 ON T1.Teacher_ID  =  T3.Teacher_ID ORDER BY T3.Name",
+        "db_id": "course_teach",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 70.0,
+          "query_length": 70.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.5056525294942129,
+        "I_minus": 0.7776762068325414,
+        "ast_hash": "307e0ba48996"
+      },
+      {
+        "query_id": "spider_dev_0927",
+        "query": "SELECT first_name FROM Professionals UNION SELECT first_name FROM Owners EXCEPT SELECT name FROM Dogs",
+        "db_id": "dog_kennels",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 3.0,
+          "join_count": 0.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 27.0,
+          "query_length": 27.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7405585571205959,
+        "I_minus": 0.7266730155951084,
+        "ast_hash": "8876e540e76a"
+      },
+      {
+        "query_id": "spider_dev_0742",
+        "query": "SELECT T1.Continent FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode GROUP BY T1.Continent ORDER BY COUNT(*) DESC LIMIT 1",
+        "db_id": "world_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5122282199046747,
+        "I_minus": 0.9077440084218042,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0844",
+        "query": "SELECT T1.Name FROM conductor AS T1 JOIN orchestra AS T2 ON T1.Conductor_ID  =  T2.Conductor_ID GROUP BY T2.Conductor_ID ORDER BY COUNT(*) DESC LIMIT 1",
+        "db_id": "orchestra",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8125107083941133,
+        "I_minus": 0.7410896903479515,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0080",
+        "query": "select count(*) ,  t1.stuid from student as t1 join has_pet as t2 on t1.stuid  =  t2.stuid group by t1.stuid",
+        "db_id": "pets_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 49.0,
+          "query_length": 49.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8253192171697731,
+        "I_minus": 0.4588806720097062,
+        "ast_hash": "2521b86750e2"
+      },
+      {
+        "query_id": "spider_dev_0469",
+        "query": "SELECT avg(ranking) ,  T1.first_name FROM players AS T1 JOIN rankings AS T2 ON T1.player_id  =  T2.player_id GROUP BY T1.first_name",
+        "db_id": "wta_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 49.0,
+          "query_length": 49.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.3243335614008528,
+        "I_minus": 0.5753391245838806,
+        "ast_hash": "2521b86750e2"
+      },
+      {
+        "query_id": "spider_dev_0369",
+        "query": "SELECT T1.document_id ,  T2.document_name ,  count(*) FROM Paragraphs AS T1 JOIN Documents AS T2 ON T1.document_id  =  T2.document_id GROUP BY T1.document_id",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 56.0,
+          "query_length": 56.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.3456125920370262,
+        "I_minus": 0.5203209588158624,
+        "ast_hash": "2521b86750e2"
+      },
+      {
+        "query_id": "spider_dev_0663",
+        "query": "SELECT T1.Name FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID ORDER BY T2.Final_Table_Made",
+        "db_id": "poker_player",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 41.0,
+          "query_length": 41.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6611168456141102,
+        "I_minus": 0.6909896901367149,
+        "ast_hash": "12e1b65fb52f"
+      },
+      {
+        "query_id": "spider_dev_0052",
+        "query": "SELECT count(*) FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid WHERE T1.age  >  20",
+        "db_id": "pets_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 48.0,
+          "query_length": 48.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5697971508487739,
+        "I_minus": 0.8414997866903389,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0909",
+        "query": "SELECT T2.name FROM Likes AS T1 JOIN Highschooler AS T2 ON T1.student_id  =  T2.id GROUP BY T1.student_id HAVING count(*)  >=  2",
+        "db_id": "network_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6809797800989579,
+        "I_minus": 0.6634018643954703,
+        "ast_hash": "44ff6254ebf2"
+      },
+      {
+        "query_id": "spider_dev_0749",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" AND T2.IsOfficial  =  \"T\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"French\" AND T2.IsOfficial  =  \"T\"",
+        "db_id": "world_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 121.0,
+          "query_length": 121.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.2427745487623628,
+        "I_minus": 0.8216367472403696,
+        "ast_hash": "b734657c9fbb"
+      },
+      {
+        "query_id": "spider_dev_0661",
+        "query": "SELECT T1.Name FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T2.Earnings  >  300000",
+        "db_id": "poker_player",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 47.0,
+          "query_length": 47.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8144359115729919,
+        "I_minus": 0.48257680876019177,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0841",
+        "query": "SELECT T1.Name ,  T2.Orchestra FROM conductor AS T1 JOIN orchestra AS T2 ON T1.Conductor_ID  =  T2.Conductor_ID",
+        "db_id": "orchestra",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 42.0,
+          "query_length": 42.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8452237840819022,
+        "I_minus": 0.8119227733254671,
+        "ast_hash": "87daf50f2461"
+      },
+      {
+        "query_id": "spider_dev_0339",
+        "query": "SELECT T2.document_name FROM Templates AS T1 JOIN Documents AS T2 ON T1.template_id  =  T2.template_id WHERE T1.template_type_code  =  \"BK\"",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 47.0,
+          "query_length": 47.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7525342048321727,
+        "I_minus": 0.5026390578415914,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0256",
+        "query": "SELECT count(*) FROM Flights AS T1 JOIN Airports AS T2 ON T1.DestAirport  =  T2.AirportCode WHERE T2.city  =  \"Aberdeen\" OR T2.city  =  \"Abilene\"",
+        "db_id": "flight_2",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 6.0,
+          "ast_node_count": 60.0,
+          "query_length": 60.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8975064630606077,
+        "I_minus": 0.49756671477997755,
+        "ast_hash": "6fee5084faee"
+      },
+      {
+        "query_id": "spider_dev_0425",
+        "query": "SELECT sum(t2.Total_spent) FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id WHERE t1.Level_of_membership  =  1",
+        "db_id": "museum_visit",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 50.0,
+          "query_length": 50.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5375996183226093,
+        "I_minus": 0.45185149321514256,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0583",
+        "query": "select t1.first_name from students as t1 join addresses as t2 on t1.permanent_address_id  =  t2.address_id where t2.country  =  'haiti' or t1.cell_mobile_number  =  '09700166582'",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 6.0,
+          "ast_node_count": 59.0,
+          "query_length": 59.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.19357292471162743,
+        "I_minus": 0.4270721495978815,
+        "ast_hash": "6fee5084faee"
+      },
+      {
+        "query_id": "spider_dev_0669",
+        "query": "SELECT avg(T2.Earnings) FROM people AS T1 JOIN poker_player AS T2 ON T1.People_ID  =  T2.People_ID WHERE T1.Height  >  200",
+        "db_id": "poker_player",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 50.0,
+          "query_length": 50.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6892271586345186,
+        "I_minus": 0.7868847821754069,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0638",
+        "query": "SELECT T1.series_name ,  T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by  =  'Michael Chang' INTERSECT SELECT T1.series_name ,  T1.country FROM TV_Channel AS T1 JOIN cartoon AS T2 ON T1.id = T2.Channel WHERE T2.directed_by  =  'Ben Jones'",
+        "db_id": "tvshow",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 4.0,
+          "ast_node_count": 107.0,
+          "query_length": 107.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7229233825437604,
+        "I_minus": 0.9220484177620908,
+        "ast_hash": "d3b56a4d8acd"
+      },
+      {
+        "query_id": "spider_dev_0399",
+        "query": "SELECT T3.Name ,  T2.Course FROM course_arrange AS T1 JOIN course AS T2 ON T1.Course_ID  =  T2.Course_ID JOIN teacher AS T3 ON T1.Teacher_ID  =  T3.Teacher_ID",
+        "db_id": "course_teach",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 64.0,
+          "query_length": 64.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5056664501686503,
+        "I_minus": 0.8302163271579284,
+        "ast_hash": "07f71863c76f"
+      },
+      {
+        "query_id": "spider_dev_0710",
+        "query": "SELECT Region FROM country AS T1 JOIN city AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Name  =  \"Kabul\"",
+        "db_id": "world_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 45.0,
+          "query_length": 45.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6783765265670446,
+        "I_minus": 0.6659254251914952,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0935",
+        "query": "SELECT T1.breed_name FROM Breeds AS T1 JOIN Dogs AS T2 ON T1.breed_code  =  T2.breed_code GROUP BY T1.breed_name ORDER BY count(*) DESC LIMIT 1",
+        "db_id": "dog_kennels",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.603754895972429,
+        "I_minus": 0.8749861150285986,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0366",
+        "query": "SELECT T1.paragraph_text FROM Paragraphs AS T1 JOIN Documents AS T2 ON T1.document_id  =  T2.document_id WHERE T2.document_name  =  \"Customer reviews\"",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 47.0,
+          "query_length": 47.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7137438035400184,
+        "I_minus": 0.7759966322519491,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0359",
+        "query": "SELECT count(*) FROM Paragraphs AS T1 JOIN Documents AS T2 ON T1.document_ID  =  T2.document_ID WHERE T2.document_name  =  'Summer Show'",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 48.0,
+          "query_length": 48.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7694782508808302,
+        "I_minus": 0.8588767024346089,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0148",
+        "query": "SELECT count(*) FROM CAR_MAKERS AS T1 JOIN MODEL_LIST AS T2 ON T1.Id  =  T2.Maker WHERE T1.FullName  =  'American Motor Company';",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 49.0,
+          "query_length": 49.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.15794932712148524,
+        "I_minus": 0.8575151985996787,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0137",
+        "query": "SELECT avg(T2.edispl) FROM CAR_NAMES AS T1 JOIN CARS_DATA AS T2 ON T1.MakeId  =  T2.Id WHERE T1.Model  =  'volvo';",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 51.0,
+          "query_length": 51.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6522225490729024,
+        "I_minus": 0.728564922310845,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0550",
+        "query": "SELECT T1.last_name FROM Students AS T1 JOIN Addresses AS T2 ON T1.current_address_id  =  T2.address_id WHERE T2.state_province_county  =  'NorthCarolina' EXCEPT SELECT DISTINCT T3.last_name FROM Students AS T3 JOIN Student_Enrolment AS T4 ON T3.student_id  =  T4.student_id",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 4.0,
+          "ast_node_count": 87.0,
+          "query_length": 87.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8031549204543372,
+        "I_minus": 0.7560956632596489,
+        "ast_hash": "1728b2354208"
+      },
+      {
+        "query_id": "spider_dev_0535",
+        "query": "SELECT DISTINCT T1.first_name ,  T1.middle_name ,  T1.last_name FROM Students AS T1 JOIN Student_Enrolment AS T2 ON T1.student_id  =  T2.student_id JOIN Degree_Programs AS T3 ON T2.degree_program_id  =  T3.degree_program_id WHERE T3.degree_summary_name  =  'Bachelor'",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 85.0,
+          "query_length": 85.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8556319422334164,
+        "I_minus": 0.8431900550914436,
+        "ast_hash": "1bf3c0ccf662"
+      },
+      {
+        "query_id": "spider_dev_0420",
+        "query": "SELECT t2.visitor_id ,  t1.name ,  t1.Level_of_membership FROM visitor AS t1 JOIN visit AS t2 ON t1.id  =  t2.visitor_id GROUP BY t2.visitor_id ORDER BY sum(t2.Total_spent) DESC LIMIT 1",
+        "db_id": "museum_visit",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 70.0,
+          "query_length": 70.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8284589232735472,
+        "I_minus": 0.7947284508546543,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0470",
+        "query": "SELECT avg(ranking) ,  T1.first_name FROM players AS T1 JOIN rankings AS T2 ON T1.player_id  =  T2.player_id GROUP BY T1.first_name",
+        "db_id": "wta_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 49.0,
+          "query_length": 49.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.42284101674702185,
+        "I_minus": 0.7912877510816164,
+        "ast_hash": "2521b86750e2"
+      },
+      {
+        "query_id": "spider_dev_0075",
+        "query": "SELECT DISTINCT T1.fname ,  T1.age FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid",
+        "db_id": "pets_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 44.0,
+          "query_length": 44.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7243569490147379,
+        "I_minus": 0.5436438547994602,
+        "ast_hash": "9a7634f96954"
+      },
+      {
+        "query_id": "spider_dev_0746",
+        "query": "SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" INTERSECT SELECT T1.Name FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"French\"",
+        "db_id": "world_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 4.0,
+          "ast_node_count": 97.0,
+          "query_length": 97.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7672270664618012,
+        "I_minus": 0.4827965947387911,
+        "ast_hash": "d3b56a4d8acd"
+      },
+      {
+        "query_id": "spider_dev_0114",
+        "query": "SELECT count(*) FROM CAR_MAKERS AS T1 JOIN COUNTRIES AS T2 ON T1.Country  =  T2.CountryId WHERE T2.CountryName  =  'france';",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 49.0,
+          "query_length": 49.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.0441443902955748,
+        "I_minus": 0.8667404483393543,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0340",
+        "query": "SELECT T2.document_name FROM Templates AS T1 JOIN Documents AS T2 ON T1.template_id  =  T2.template_id WHERE T1.template_type_code  =  \"BK\"",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 47.0,
+          "query_length": 47.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.6805661998567978,
+        "I_minus": 0.9112797548261908,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0525",
+        "query": "SELECT T1.course_name ,  T1.course_id FROM Courses AS T1 JOIN Sections AS T2 ON T1.course_id  =  T2.course_id GROUP BY T1.course_id HAVING count(*)  <=  2",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 61.0,
+          "query_length": 61.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.47434231445843145,
+        "I_minus": 0.619891300158778,
+        "ast_hash": "44ff6254ebf2"
+      },
+      {
+        "query_id": "spider_dev_1022",
+        "query": "SELECT T1.Name FROM singer AS T1 JOIN song AS T2 ON T1.Singer_ID  =  T2.Singer_ID GROUP BY T1.Name HAVING COUNT(*)  >  1",
+        "db_id": "singer",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": false,
+        "g_t": 0.12783017439405023,
+        "I_minus": 0.8396216175566016,
+        "ast_hash": "44ff6254ebf2"
+      },
+      {
+        "query_id": "spider_dev_0106",
+        "query": "SELECT T1.Continent ,  count(*) FROM CONTINENTS AS T1 JOIN COUNTRIES AS T2 ON T1.ContId  =  T2.continent JOIN car_makers AS T3 ON T2.CountryId  =  T3.Country GROUP BY T1.Continent;",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 72.0,
+          "query_length": 72.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7725399316850852,
+        "I_minus": 0.6456978704688804,
+        "ast_hash": "577cab94a587"
+      },
+      {
+        "query_id": "spider_dev_0237",
+        "query": "SELECT T1.Airline FROM AIRLINES AS T1 JOIN FLIGHTS AS T2 ON T1.uid  =  T2.Airline WHERE T2.SourceAirport  =  \"APG\" INTERSECT SELECT T1.Airline FROM AIRLINES AS T1 JOIN FLIGHTS AS T2 ON T1.uid  =  T2.Airline WHERE T2.SourceAirport  =  \"CVO\"",
+        "db_id": "flight_2",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 4.0,
+          "ast_node_count": 97.0,
+          "query_length": 97.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7770602964076093,
+        "I_minus": 0.8841915111314732,
+        "ast_hash": "d3b56a4d8acd"
+      },
+      {
+        "query_id": "spider_dev_0212",
+        "query": "SELECT count(*) FROM FLIGHTS AS T1 JOIN AIRPORTS AS T2 ON T1.DestAirport  =  T2.AirportCode JOIN AIRPORTS AS T3 ON T1.SourceAirport  =  T3.AirportCode WHERE T2.City  =  \"Ashley\" AND T3.City  =  \"Aberdeen\"",
+        "db_id": "flight_2",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 6.0,
+          "ast_node_count": 82.0,
+          "query_length": 82.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5681702685115511,
+        "I_minus": 0.8865838876988842,
+        "ast_hash": "365c19ef69e9"
+      },
+      {
+        "query_id": "spider_dev_0277",
+        "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1",
+        "db_id": "employee_hire_evaluation",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8622338009035695,
+        "I_minus": 0.8356567232926448,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0077",
+        "query": "SELECT T2.petid FROM student AS T1 JOIN has_pet AS T2 ON T1.stuid  =  T2.stuid WHERE T1.Lname  =  'Smith'",
+        "db_id": "pets_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 3.0,
+          "ast_node_count": 47.0,
+          "query_length": 47.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.47910556605785376,
+        "I_minus": 0.9044238943742376,
+        "ast_hash": "4bdae3d29e83"
+      },
+      {
+        "query_id": "spider_dev_0755",
+        "query": "SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"English\" AND IsOfficial  =  \"T\" UNION SELECT * FROM country AS T1 JOIN countrylanguage AS T2 ON T1.Code  =  T2.CountryCode WHERE T2.Language  =  \"Dutch\" AND IsOfficial  =  \"T\"",
+        "db_id": "world_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 2.0,
+          "predicate_count": 7.0,
+          "ast_node_count": 113.0,
+          "query_length": 113.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.8661368581937955,
+        "I_minus": 0.7312309360222577,
+        "ast_hash": "8167c8c43204"
+      },
+      {
+        "query_id": "spider_dev_0562",
+        "query": "SELECT T1.address_id ,  T1.line_1 ,  T1.line_2 FROM Addresses AS T1 JOIN Students AS T2 ON T1.address_id  =  T2.current_address_id GROUP BY T1.address_id ORDER BY count(*) DESC LIMIT 1",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 68.0,
+          "query_length": 68.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.5253403669369471,
+        "I_minus": 0.929586620708034,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0172",
+        "query": "SELECT DISTINCT T1.model FROM MODEL_LIST AS T1 JOIN CAR_NAMES AS T2 ON T1.Model  =  T2.Model JOIN CARS_DATA AS T3 ON T2.MakeId  =  T3.Id JOIN CAR_MAKERS AS T4 ON T1.Maker  =  T4.Id WHERE T3.weight  <  3500 AND T4.FullName != 'Ford Motor Company';",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 3.0,
+          "predicate_count": 6.0,
+          "ast_node_count": 104.0,
+          "query_length": 104.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.9509750298352775,
+        "I_minus": 0.7729451519651274,
+        "ast_hash": "bd3096091e6b"
+      },
+      {
+        "query_id": "spider_dev_0173",
+        "query": "SELECT CountryName FROM countries EXCEPT SELECT T1.CountryName FROM countries AS T1 JOIN CAR_MAKERS AS T2 ON T1.countryId  =  T2.Country;",
+        "db_id": "car_1",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 46.0,
+          "query_length": 46.0,
+          "aggregation_presence": 0.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.661509346016864,
+        "I_minus": 0.8309210016530784,
+        "ast_hash": "99bfeacddf84"
+      },
+      {
+        "query_id": "spider_dev_0278",
+        "query": "SELECT t1.name FROM employee AS t1 JOIN evaluation AS t2 ON t1.Employee_ID  =  t2.Employee_ID GROUP BY t2.Employee_ID ORDER BY count(*) DESC LIMIT 1",
+        "db_id": "employee_hire_evaluation",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 54.0,
+          "query_length": 54.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7261639239567126,
+        "I_minus": 0.6166196576752067,
+        "ast_hash": "ac05fdbeaa0b"
+      },
+      {
+        "query_id": "spider_dev_0526",
+        "query": "SELECT T1.course_name ,  T1.course_id FROM Courses AS T1 JOIN Sections AS T2 ON T1.course_id  =  T2.course_id GROUP BY T1.course_id HAVING count(*)  <=  2",
+        "db_id": "student_transcripts_tracking",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 61.0,
+          "query_length": 61.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.7245161501474815,
+        "I_minus": 0.3466198979127079,
+        "ast_hash": "44ff6254ebf2"
+      },
+      {
+        "query_id": "spider_dev_0312",
+        "query": "SELECT T1.template_id ,  T2.Template_Type_Code FROM Documents AS T1 JOIN Templates AS T2 ON T1.template_id  =  T2.template_id GROUP BY T1.template_id ORDER BY count(*) DESC LIMIT 1",
+        "db_id": "cre_Doc_Template_Mgt",
+        "condition": "B",
+        "ast_depth": 1,
+        "has_scope_crossing": true,
+        "complexity_metrics": {
+          "table_count": 1.0,
+          "join_count": 1.0,
+          "predicate_count": 1.0,
+          "ast_node_count": 61.0,
+          "query_length": 61.0,
+          "aggregation_presence": 1.0
+        },
+        "hc3_violation": true,
+        "g_t": 0.13706859252846448,
+        "I_minus": 0.7982824635152712,
+        "ast_hash": "ac05fdbeaa0b"
+      }
+    ]
+  }
+}

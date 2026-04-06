@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.sqlite-journal
+.DS_Store
+
+# Sensitive files
+*.key
+*_secret*
+config_local.py
+local_config.yaml
+
+# Large data files (download separately)
+spider/*.db
+spider/*.sqlite
+data/calibration/
+data/gold_standard/
+results/*/raw_outputs/
+swanlog/
+logs/
+clouds_outputs/
+
+# Python
+*.pyc
+*.pyo
+.pytest_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Paper sources (excluded while under review)
+paper_sources/

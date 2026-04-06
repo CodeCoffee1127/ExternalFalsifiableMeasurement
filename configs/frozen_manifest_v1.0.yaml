@@ -1,0 +1,23 @@
+# 凍結參數清單 (Frozen Parameter Manifest) - §8, §9.2.1
+# 所有參數均有論文章節引用
+
+alpha_0: 1.4426950408889634  # 理論值 ln(2)/ln(e)，不可調 (§8)
+
+tau_tail:
+  tier_0: 0.58   # 75分位數，Calibration 後凍結
+  tier_1: 0.62
+  tier_2: 0.65
+  tier_3: 0.71
+
+gate_params:
+  w_A: 1.4363502971184063
+  w_u: -0.3379999420522348
+  b_g: -5.0
+  constraints: { w_A: ">0", w_u: "<0" }  # 符號約束
+
+protocol_constants:
+  tau_g: 0.3      # 門控工作點，硬編碼
+  N_min_eff: 30
+  ljung_box_lags: 5
+  random_seed: 42
+  train_test_split: [214, 320]  # 40:60 Calibration:Test

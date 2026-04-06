@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-03-31T20:11:14.671597",
+  "random_seed": 42,
+  "config_hash": "N/A",
+  "frozen_parameters": {
+    "alpha0": 1.4426950408889634,
+    "tau_tail": 0.6217496595783334,
+    "beta_rho": 0.1,
+    "tier_thresholds": {
+      "tier_0": 0.171,
+      "tier_1": 0.319,
+      "tier_2": 0.425,
+      "tier_3": 0.587
+    }
+  },
+  "fitted_parameters": {
+    "beta_step": [
+      0.18446336499257676,
+      0.05677799039441284,
+      0.00965871521151154
+    ],
+    "lambda_lag": 0.0026309026309176966,
+    "gamma_inter": -2.030763763082266,
+    "delta_quad": -0.04010852307369383
+  },
+  "data_split": {
+    "n_cal": 1516,
+    "n_test": 369,
+    "tier_distribution": {
+      "tier_0": 30,
+      "tier_1": 300,
+      "tier_2": 39
+    }
+  }
+}

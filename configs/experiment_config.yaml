@@ -1,0 +1,82 @@
+api:
+  api_key: sk-1c6adcc49ca54e13bc5aa6a10d4d435e
+  endpoint: https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation
+  model: qwen-turbo
+  provider: aliyun
+dataset:
+  n_calibration: 534
+  n_gold: 30
+  n_test: 500
+  random_seed: 42
+debug_mode:
+  enabled: false
+  n_calibration: 10
+  n_candidates_per_step: 10
+  n_gold: 5
+  n_test: 5
+dynamics:
+  initial_params:
+    alpha0: 0.5
+    b: 0.2
+    tau_tail: 5.0
+    wA: 0.3
+    wI: 0.3
+  optimization:
+    max_iterations: 1000
+    method: L-BFGS-B
+    tolerance: 1e-6
+  param_bounds:
+    alpha0:
+    - 0.0
+    - 1.0
+    b:
+    - 0.0
+    - 1.0
+    tau_tail:
+    - 1.0
+    - 20.0
+    wA:
+    - 0.0
+    - 1.0
+    wI:
+    - 0.0
+    - 1.0
+falsifiability:
+  ljung_box_lag: 5
+  significance_level: 0.05
+logging:
+  format: '{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}'
+  level: INFO
+  rotation: 500 MB
+parallel:
+  backend: loky
+  n_jobs: 24
+  verbose: 10
+paths:
+  data_dir: data
+  log_dir: logs
+  output_dir: outputs
+  project_root: .
+  spider_data: spider
+phases:
+  run_phase1: true
+  run_phase2: true
+  run_phase3: true
+  run_phase4: true
+state:
+  beta_prior_alpha: 0.5  # Jeffreys prior (論文 §V-C)
+  beta_prior_beta: 0.5
+  dependency_auto_extract: true
+  use_parent_ablation: true  # 論文 §7：父消融計算 I_+/I_-
+generation:
+  use_diverse_candidates: true  # EXP002: 溫度分層+錯誤注入
+  inject_ratio: 0.2
+  force_error_injection: true   # 強制錯誤注入，確保 At 變異
+vsp:
+  n_candidates_per_step: 30
+  thresholds:
+    calibration_max: 0.05  # EXP002: 0.0444 可接受
+    precision_max: 0.05
+    stability_min: 0.95
+    structural_consistency_min: 0.7
+  verification_timeout: 30

@@ -4,7 +4,7 @@
 > **Journal**: Information Sciences (under review)
 > **Status**: Submitted
 > **Code Repository**: https://github.com/CodeCoffee1127/ExternalFalsifiableMeasurement
-> **Data Archive**: [figshare DOI — to be added after upload]
+> **Data Archive**: https://doi.org/10.6084/m9.figshare.31941717
 
 ## Abstract
 
@@ -106,8 +106,6 @@ Download these datasets separately and place them according to `docs/DATA_MOUNT_
 Consolidated for editors/reviewers in **`SUBMISSION_DISCLOSURE.md`**. Per-component notes in **`docs/disclosures/`** and **`docs/gaps/`**.
 
 ---
-
-*Read-only sources `D:\ExternalFalsifiableMeasurement` and `D:\Latex\Paper1_2.0` were not modified. This reviewer-facing tree is a **selective export**; see **`SUBMISSION_PACKAGE_NOTE.md`**.*
 
 
 ## Citation

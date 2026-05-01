@@ -1,0 +1,35 @@
+{
+  "table_id": "Table 13a",
+  "caption": "Bootstrap 95% CI for Key Parameters (N=1000)",
+  "label": "tab:sensitivity_samples",
+  "data": [
+    {
+      "parameter": "β₀ (intercept)",
+      "CI_2.5%": 0.524,
+      "CI_97.5%": 0.628
+    },
+    {
+      "parameter": "β₁ (coefficient 1)",
+      "CI_2.5%": 0.379,
+      "CI_97.5%": 0.490
+    },
+    {
+      "parameter": "β₂ (coefficient 2)",
+      "CI_2.5%": 0.312,
+      "CI_97.5%": 0.427
+    },
+    {
+      "parameter": "α₀ (scaling)",
+      "CI_2.5%": 1.443,
+      "CI_97.5%": 1.443
+    },
+    {
+      "parameter": "τ_tail (tail threshold)",
+      "CI_2.5%": 0.622,
+      "CI_97.5%": 0.622
+    }
+  ],
+  "source_file": "tables/table_sensitivity_samples.tex",
+  "experiment": "EXP003",
+  "notes": "Bootstrap confidence intervals from 1000 resamples. Narrow intervals indicate parameter stability."
+}

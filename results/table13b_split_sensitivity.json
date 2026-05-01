@@ -1,0 +1,35 @@
+{
+  "table_id": "Table 13b",
+  "caption": "Sensitivity to Train/Test Split Ratio",
+  "label": "tab:sensitivity_split",
+  "data": [
+    {
+      "metric": "R²",
+      "split_70_30": 0.953,
+      "split_80_20": 0.945
+    },
+    {
+      "metric": "RMSE",
+      "split_70_30": 0.019,
+      "split_80_20": 0.021
+    },
+    {
+      "metric": "Ljung-Box p",
+      "split_70_30": 0.141,
+      "split_80_20": 0.258
+    },
+    {
+      "metric": "N_cal (calibration samples)",
+      "split_70_30": 105,
+      "split_80_20": 120
+    },
+    {
+      "metric": "N_test (test samples)",
+      "split_70_30": 45,
+      "split_80_20": 30
+    }
+  ],
+  "source_file": "tables/table_sensitivity_split.tex",
+  "experiment": "EXP003",
+  "notes": "Robustness check across different train/test split ratios. 80/20 split used in primary analysis."
+}

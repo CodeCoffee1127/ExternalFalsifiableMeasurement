@@ -1,0 +1,6 @@
+Parameter,CI_2.5%,CI_97.5%
+β₀ (intercept),0.524,0.628
+β₁ (coefficient 1),0.379,0.490
+β₂ (coefficient 2),0.312,0.427
+α₀ (scaling),1.443,1.443
+τ_tail (tail threshold),0.622,0.622

@@ -1,0 +1,6 @@
+Metric,split_70_30,split_80_20
+R²,0.953,0.945
+RMSE,0.019,0.021
+Ljung-Box p,0.141,0.258
+N_cal (calibration samples),105,120
+N_test (test samples),45,30

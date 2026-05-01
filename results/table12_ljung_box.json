@@ -1,0 +1,34 @@
+{
+  "table_id": "Table 12",
+  "caption": "Ljung-Box Test for Residual Autocorrelation (lag=5)",
+  "label": "tab:ljung",
+  "data": [
+    {
+      "subset": "All Test Samples",
+      "Q_LB_Statistic": 6.42,
+      "p_value": 0.258,
+      "verdict": "Not Rejected"
+    },
+    {
+      "subset": "Simple (T≤3)",
+      "Q_LB_Statistic": 3.18,
+      "p_value": 0.258,
+      "verdict": "Not Rejected"
+    },
+    {
+      "subset": "Medium (4≤T≤6)",
+      "Q_LB_Statistic": 4.25,
+      "p_value": 0.258,
+      "verdict": "Not Rejected"
+    },
+    {
+      "subset": "Complex (T>6)",
+      "Q_LB_Statistic": 5.91,
+      "p_value": 0.258,
+      "verdict": "Not Rejected"
+    }
+  ],
+  "source_file": "tables/table_ljung.tex",
+  "experiment": "EXP008",
+  "notes": "Residual whiteness test across tier stratifications. All p-values > 0.05 indicate no significant autocorrelation."
+}

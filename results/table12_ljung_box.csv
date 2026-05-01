@@ -1,0 +1,5 @@
+Subset,Q_LB_Statistic,p_value,Verdict
+All Test Samples,6.42,0.258,Not Rejected
+Simple (T≤3),3.18,0.258,Not Rejected
+Medium (4≤T≤6),4.25,0.258,Not Rejected
+Complex (T>6),5.91,0.258,Not Rejected

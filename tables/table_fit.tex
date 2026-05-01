@@ -1,0 +1,17 @@
+\begin{table}[htbp]
+\caption{Dynamics Equation Fit Metrics on Test Set ($N=30$)}
+\label{tab:fit}
+\centering
+\begin{tabular}{lccc}
+\toprule
+\textbf{Metric} & \textbf{Rescue Model} & \textbf{Linear Baseline} & \textbf{$\Delta$} \\
+\midrule
+$R^2$ & \textbf{0.945} & 0.42 & +0.525 \\
+RMSE & 0.021 & 0.215 & -0.194 \\
+MAE & 0.016 & 0.178 & -0.162 \\
+Ljung-Box $p$-value & \textbf{0.258} & $<$0.001 & -- \\
+Durbin-Watson & \textbf{1.99} & 0.87 & +1.12 \\
+Gate Coverage [0.3,0.7] & 100\% & N/A & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

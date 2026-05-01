@@ -1,0 +1,34 @@
+{
+  "table_id": "Table 11",
+  "caption": "Dynamics Equation Fit Metrics on Test Set (N=30)",
+  "label": "tab:fit",
+  "data": {
+    "rescue_model": {
+      "R2": 0.945,
+      "RMSE": 0.021,
+      "MAE": 0.016,
+      "Ljung-Box_p_value": 0.258,
+      "Durbin_Watson": 1.99,
+      "Gate_Coverage_0.3_0.7": "100%"
+    },
+    "linear_baseline": {
+      "R2": 0.42,
+      "RMSE": 0.215,
+      "MAE": 0.178,
+      "Ljung-Box_p_value": "<0.001",
+      "Durbin_Watson": 0.87,
+      "Gate_Coverage_0.3_0.7": "N/A"
+    },
+    "delta": {
+      "R2": "+0.525",
+      "RMSE": "-0.194",
+      "MAE": "-0.162",
+      "Ljung-Box_p_value": "--",
+      "Durbin_Watson": "+1.12",
+      "Gate_Coverage_0.3_0.7": "--"
+    }
+  },
+  "source_file": "tables/table_fit.tex",
+  "experiment": "EXP003",
+  "notes": "Test set performance comparing Rescue Dynamics model vs Linear Baseline"
+}

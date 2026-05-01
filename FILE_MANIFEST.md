@@ -54,6 +54,29 @@ This manifest describes **this reviewer-facing zip**, not the full archival reco
 | `results/README_RUN_EVIDENCE.md` | Explains retained JSON evidence |
 | `results/exp006_cross_model/`, `exp010_vsp_sensitivity/` | Small runnable evidence |
 | `results/exp003_rerun_20260312/` | **Subset only** (global/tiered JSON + manifest + freeze log; no full log/jsonl duplicate here) |
+| `results/table11_fit_metrics.{json,csv}` | **NEW** Dynamics Equation Fit Metrics (Table 11) |
+| `results/table12_ljung_box.{json,csv}` | **NEW** Ljung-Box Test Results (Table 12) |
+| `results/table13a_bootstrap_ci.{json,csv}` | **NEW** Bootstrap 95% CI (Table 13a) |
+| `results/table13b_split_sensitivity.{json,csv}` | **NEW** Split Sensitivity Analysis (Table 13b) |
+
+## Tables
+
+| Path | Role |
+|------|------|
+| `tables/README.md` | **NEW** Table index and usage guide |
+| `tables/table_fit.tex` | **ADDED** Table 11: Dynamics Equation Fit Metrics |
+| `tables/table_ljung.tex` | **ADDED** Table 12: Ljung-Box Residual Autocorrelation |
+| `tables/table_sensitivity_samples.tex` | **ADDED** Table 13a: Bootstrap Confidence Intervals |
+| `tables/table_sensitivity_split.tex` | **ADDED** Table 13b: Train/Test Split Sensitivity |
+| `tables/table_tier.tex` | **ADDED** Tier-Wise Performance Analysis |
+| `tables/table_vsp.tex` | **ADDED** VSP Audit Results |
+
+## Experiment Reports
+
+| Path | Role |
+|------|------|
+| `experiment_reports/EXP003_Fit_Analysis/README.md` | **NEW** Detailed fit analysis with Table 11, 13a, 13b |
+| `experiment_reports/EXP008_LjungBox_Test/README.md` | **NEW** Ljung-Box test methodology and results (Table 12) |
 
 ## Figures and paper
 

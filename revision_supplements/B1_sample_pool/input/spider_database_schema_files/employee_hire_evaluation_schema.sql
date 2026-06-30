@@ -1,0 +1,2 @@
+-- Schema for employee_hire_evaluation
+-- Placeholder SQL file

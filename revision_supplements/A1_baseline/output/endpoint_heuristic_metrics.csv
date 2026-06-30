@@ -1,0 +1,5 @@
+heuristic_name,strategy,n_cases,exact_onset_match,within_one_step_match,onset_mae,pattern_macro_f1,is_baseline_for_comparison
+all_t0,forced_all_t0,287,0.28,0.45,0.95,0.0,False
+all_final,forced_all_final,287,0.22,0.38,1.05,0.0,False
+majority_onset_train,forced_majority_onset,287,0.35,0.55,0.78,0.0,True
+uniform_random_seeded,forced_uniform_random,287,0.25,0.42,0.88,0.0,False

@@ -1,0 +1,123 @@
+{
+  "first_degradation_step": {
+    "label_name": "first_degradation_step",
+    "definition": "The earliest checkpoint step at which chain reasoning quality demonstrably declines.",
+    "positive_criteria": "Verification failure, semantic drift, or structural incoherence observable at a specific step.",
+    "negative_criteria": "All steps maintain quality; degradation cannot be localized to a single step.",
+    "annotator_visible_evidence": "checkpoint_sequence, verification_result_per_step, question_text, schema",
+    "annotator_forbidden_evidence": "cpfc_onset_label, ground_truth_sql, model_identity",
+    "example_case_ids_blinded": [
+      "annot_001",
+      "annot_012",
+      "annot_045"
+    ],
+    "decision_rule": "Check steps in order (t0, then t1, then t2). First failing step = onset."
+  },
+  "no_degradation": {
+    "label_name": "no_degradation",
+    "definition": "The chain maintains acceptable reasoning quality throughout all checkpoint steps.",
+    "positive_criteria": "All checkpoints pass verification; no semantic drift detected.",
+    "negative_criteria": "Any checkpoint fails verification or shows semantic drift.",
+    "annotator_visible_evidence": "checkpoint_sequence, verification_results",
+    "annotator_forbidden_evidence": "cpfc_labels",
+    "example_case_ids_blinded": [
+      "annot_003",
+      "annot_028"
+    ],
+    "decision_rule": "Label 'none' only if ALL checkpoints are acceptable."
+  },
+  "uncertain_onset": {
+    "label_name": "uncertain_onset",
+    "definition": "The onset of degradation cannot be reliably determined from available evidence.",
+    "positive_criteria": "Contradictory evidence across checkpoints; missing verification data.",
+    "negative_criteria": "Clear, consistent evidence points to a specific step.",
+    "annotator_visible_evidence": "all_available_evidence",
+    "annotator_forbidden_evidence": "none",
+    "example_case_ids_blinded": [
+      "annot_007",
+      "annot_091"
+    ],
+    "decision_rule": "Use only when evidence is genuinely insufficient after 5-minute review."
+  },
+  "local_verification_collapse": {
+    "label_name": "local_verification_collapse",
+    "definition": "Verification fails at a single isolated step without downstream propagation.",
+    "positive_criteria": "Single step fails; subsequent steps acceptable; no dependency chain.",
+    "negative_criteria": "Multiple steps fail; error propagates; burst context.",
+    "annotator_visible_evidence": "step_outputs, verification_per_step, schema",
+    "annotator_forbidden_evidence": "cpfc_pattern_label",
+    "example_case_ids_blinded": [
+      "annot_005",
+      "annot_017",
+      "annot_033"
+    ],
+    "decision_rule": "Confirm isolation: check that subsequent steps do not depend on failed step."
+  },
+  "dependency_mediated_propagation": {
+    "label_name": "dependency_mediated_propagation",
+    "definition": "Error at one step propagates through logical dependencies to subsequent steps.",
+    "positive_criteria": "Early step error; cascading failures; traceable dependency chain.",
+    "negative_criteria": "Independent steps; isolated single-step failure.",
+    "annotator_visible_evidence": "step_outputs, dependency_structure, schema_foreign_keys",
+    "annotator_forbidden_evidence": "cpfc_pattern_label",
+    "example_case_ids_blinded": [
+      "annot_008",
+      "annot_022",
+      "annot_041"
+    ],
+    "decision_rule": "Trace dependency links. Confirm later step failures stem from earlier error."
+  },
+  "burst_associated_degradation": {
+    "label_name": "burst_associated_degradation",
+    "definition": "Degradation coincides with or follows a reasoning burst.",
+    "positive_criteria": "Degradation at burst point; elevated step complexity; rapid step sequence.",
+    "negative_criteria": "Degradation in simple, non-burst context.",
+    "annotator_visible_evidence": "step_count, step_complexity_indicators, checkpoint_timing",
+    "annotator_forbidden_evidence": "cpfc_pattern_label",
+    "example_case_ids_blinded": [
+      "annot_011",
+      "annot_029",
+      "annot_056"
+    ],
+    "decision_rule": "Identify burst by elevated step density or complexity, then check degradation alignment."
+  },
+  "boundary_case": {
+    "label_name": "boundary_case",
+    "definition": "Case falls at the boundary between two or more pattern categories.",
+    "positive_criteria": "Equally strong evidence for multiple categories; confidence < 3.",
+    "negative_criteria": "Clear best-fit category exists with confidence >= 3.",
+    "annotator_visible_evidence": "all_evidence",
+    "annotator_forbidden_evidence": "none",
+    "example_case_ids_blinded": [
+      "annot_014",
+      "annot_038"
+    ],
+    "decision_rule": "Flag when tie-breaking does not yield clear winner."
+  },
+  "unverifiable_or_excluded": {
+    "label_name": "unverifiable_or_excluded",
+    "definition": "Case cannot be verified or meets exclusion criteria.",
+    "positive_criteria": "Missing data; corrupt files; insufficient checkpoints.",
+    "negative_criteria": "All required materials available and readable.",
+    "annotator_visible_evidence": "material_availability",
+    "annotator_forbidden_evidence": "none",
+    "example_case_ids_blinded": [
+      "annot_019",
+      "annot_067"
+    ],
+    "decision_rule": "Exclude if <2 checkpoints or unreadable schema."
+  },
+  "ambiguous_case": {
+    "label_name": "ambiguous_case",
+    "definition": "Both annotators independently flag ambiguity.",
+    "positive_criteria": "Both annotators flag; labels disagree after full review.",
+    "negative_criteria": "Single annotator flags; labels agree.",
+    "annotator_visible_evidence": "all_evidence",
+    "annotator_forbidden_evidence": "other_annotator_labels",
+    "example_case_ids_blinded": [
+      "annot_025",
+      "annot_073"
+    ],
+    "decision_rule": "Trigger adjudication only when both flag AND disagree."
+  }
+}

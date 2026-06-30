@@ -1,0 +1,2 @@
+-- Schema for world_1
+-- Placeholder SQL file

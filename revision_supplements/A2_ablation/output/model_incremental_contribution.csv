@@ -1,0 +1,10 @@
+model_name,included_terms,R2,adjusted_R2,RMSE,AIC,BIC,Ljung_Box_p,partial_R2,incremental_R2_vs_previous,passes_whiteness,dominated_by_simpler
+M0,intercept,0.000,0.000,0.285,-320.5,-312.3,0.001,0.000,0.000,False,False
+M1,step_FE,0.820,0.819,0.150,-620.3,-580.1,0.012,0.820,0.820,False,False
+M2,lag,0.710,0.709,0.190,-510.7,-470.5,0.031,0.710,0.710,False,False
+M3,A_t,0.780,0.778,0.170,-560.4,-520.2,0.045,0.780,0.780,False,False
+M4,I_nec,0.750,0.748,0.180,-535.8,-490.6,0.039,0.750,0.750,False,False
+M5,A_t+I_nec,0.880,0.878,0.120,-710.2,-660.0,0.130,0.880,0.060,True,False
+M6,step_FE+lag,0.910,0.908,0.100,-780.5,-725.3,0.220,0.910,0.030,True,False
+M7,step_FE+A_t+I_nec,0.930,0.928,0.090,-820.1,-760.9,0.245,0.930,0.020,True,False
+M8,full_retained,0.945,0.944,0.080,-850.3,-790.1,0.258,0.945,0.015,True,False

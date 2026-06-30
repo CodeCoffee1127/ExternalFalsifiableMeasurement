@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "freeze_date": "2025-02-01",
+  "source": "B0_codebook/output/annotation_label_definitions.json",
+  "labels": [
+    "first_degradation_step",
+    "no_degradation",
+    "uncertain_onset",
+    "local_verification_collapse",
+    "dependency_mediated_propagation",
+    "burst_associated_degradation",
+    "boundary_case",
+    "unverifiable_or_excluded",
+    "ambiguous_case"
+  ],
+  "onset_labels": [
+    "t0",
+    "t1",
+    "t2",
+    "none",
+    "uncertain"
+  ],
+  "pattern_labels": [
+    "local_verification_collapse",
+    "dependency_mediated_propagation",
+    "burst_associated_degradation",
+    "boundary_case",
+    "unverifiable_or_excluded"
+  ],
+  "metadata": {
+    "pilot_onset_kappa": 0.72,
+    "pilot_pattern_kappa": 0.68,
+    "codebook_status": "frozen"
+  }
+}

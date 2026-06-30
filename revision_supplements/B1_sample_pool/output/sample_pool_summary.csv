@@ -1,0 +1,14 @@
+stratum,count,proportion
+uncertain,10,0.1
+boundary,5,0.05
+onset_t1,25,0.25
+onset_t0,31,0.31
+onset_none,9,0.09
+onset_t2,19,0.19
+unverifiable,1,0.01
+pattern_local_verification_collapse,25,0.25
+pattern_boundary_case,18,0.18
+pattern_dependency_mediated_propagation,25,0.25
+pattern_unverifiable_or_excluded,18,0.18
+pattern_burst_associated_degradation,14,0.14
+TOTAL,100,1.0

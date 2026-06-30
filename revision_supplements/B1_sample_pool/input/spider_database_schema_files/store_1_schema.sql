@@ -1,0 +1,2 @@
+-- Schema for store_1
+-- Placeholder SQL file

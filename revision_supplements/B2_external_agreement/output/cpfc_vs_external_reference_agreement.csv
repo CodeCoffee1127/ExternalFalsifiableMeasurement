@@ -1,0 +1,8 @@
+label_type,n_cases,external_reference_type,cpfc_exact_agreement,cpfc_within_one_step_agreement,cpfc_onset_mae,cohens_kappa_cpfc_vs_reference,weighted_kappa_cpfc_vs_reference,macro_f1_cpfc_vs_reference,notes
+onset,100,annotator_A,0.8,0.99,0.21,0.73,0.91,N/A,Using annotator A as reference
+onset,100,annotator_B,0.74,0.97,0.31,0.65,0.81,N/A,Using annotator B as reference
+onset,100,majority_vote,0.74,0.99,0.27,0.65,0.88,N/A,Using majority vote as reference (PRIMARY)
+pattern,100,annotator_A,0.72,N/A,N/A,0.64,0.62,0.68,Using annotator A as reference
+pattern,100,annotator_B,0.68,N/A,N/A,0.61,0.59,0.65,Using annotator B as reference
+pattern,100,majority_vote,0.74,N/A,N/A,0.67,0.70,0.74,Using majority vote as reference (PRIMARY)
+pattern,100,adjudicated_reference,0.76,N/A,N/A,0.69,0.72,0.77,Adjudicated reference

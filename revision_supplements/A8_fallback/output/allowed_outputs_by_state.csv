@@ -1,0 +1,11 @@
+state_name,allowed_diagnostic_output,allowed_claim_level,allowed_manuscript_location,caveats_required
+cardinal_rejected_ordinal_only,ordinal verification-entropy index; ordinal category frequencies; rank-based comparisons,ordinal population-level protocol-defined diagnostic output,"results, discussion",All claims must specify 'ordinal only'; no cardinal interpretation permitted
+original_specification_rejected,descriptive statistics only; no model-based output,no model claim,none,Entire model specification rejected; cannot make model-based claims
+retained_model_admissible,ordinal verification-entropy index; model comparison statistics; residual diagnostics,ordinal population-level protocol-defined diagnostic output; within-protocol model comparison,"results, discussion, conclusions",Claims must specify 'within-protocol' and 'ordinal'
+retained_model_provisional,ordinal verification-entropy index with uncertainty bands; sensitivity analysis results,provisional ordinal diagnostic with explicit caveat,results (with caveats),Must state provisional status; sensitivity analysis required; confidence not definitive
+non_identifiable,raw frequency tables; descriptive summary statistics,ordinal descriptive statistics only,results (descriptive only),No model-based claims; descriptive only; cannot generalize
+scope_boundary,exclusion reason documentation,exclusion noted,"methods, appendix",Excluded instances must not be used for any inference
+unverifiable_excluded,none (excluded),none,appendix (exclusion list only),No claims permitted for excluded instances
+external_agreement_supported,all retained_model_admissible outputs plus external validation annotation,ordinal population-level protocol-defined diagnostic output with external validation,"results, discussion, conclusions",External validation applies only to evaluated checkpoint types
+external_agreement_partial,exploratory statistics with partial validation flag,exploratory observation only; partial external validation noted,results (exploratory section),Must state partial validation; not definitive
+external_agreement_not_supported,exploratory statistics only,exploratory observation only; no external validation claim,"results (exploratory section), appendix",Explicitly state lack of external validation; purely exploratory

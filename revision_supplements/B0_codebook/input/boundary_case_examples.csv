@@ -1,0 +1,13 @@
+example_id,case_id,boundary_type,description,resolving_criteria,annotator_guidance
+boundary_01,case_135,onset_boundary,Boundary case example 1: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_02,case_328,pattern_boundary,Boundary case example 2: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_03,case_033,both,Boundary case example 3: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_04,case_062,onset_boundary,Boundary case example 4: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_05,case_099,pattern_boundary,Boundary case example 5: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_06,case_035,onset_boundary,Boundary case example 6: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_07,case_227,onset_boundary,Boundary case example 7: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_08,case_131,onset_boundary,Boundary case example 8: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_09,case_005,pattern_boundary,Boundary case example 9: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_10,case_255,pattern_boundary,Boundary case example 10: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_11,case_359,both,Boundary case example 11: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review
+boundary_12,case_207,both,Boundary case example 12: ambiguous between categories,Use confidence scores and majority evidence direction,Flag as boundary_case if ambiguous after 5-minute review

@@ -1,0 +1,26 @@
+{
+  "directory": "B3_terminology/input",
+  "created_date": "2025-02-15",
+  "files": [
+    {
+      "filename": "Modification_Plan_claim_boundary.csv",
+      "source": "modification_plan",
+      "description": "Claim boundaries"
+    },
+    {
+      "filename": "A6_claim_replacement_log.csv",
+      "source": "A6",
+      "description": "Claim replacements from A6"
+    },
+    {
+      "filename": "B2_external_agreement_summary.csv",
+      "source": "B2",
+      "description": "External agreement summary"
+    },
+    {
+      "filename": "skeleton_C.md",
+      "source": "template",
+      "description": "Reference skeleton"
+    }
+  ]
+}

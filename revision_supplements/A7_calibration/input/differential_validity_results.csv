@@ -1,0 +1,7 @@
+bias_injection_level,spearman_rho,bootstrap_low,bootstrap_high,threshold,passes_rank_order_threshold,notes
+0%,0.99,0.8504,1,0.9,True,0% bias; strong rank correlation maintained
+10%,0.98,0.8404,1,0.9,True,10% bias; strong rank correlation maintained
+20%,0.97,0.8304,1,0.9,True,20% bias; strong rank correlation maintained
+30%,0.96,0.8204,1,0.9,True,30% bias; strong rank correlation maintained
+40%,0.965,0.8254,1,0.9,True,40% bias; strong rank correlation maintained
+50%,0.9636,0.824,1,0.9,True,50% bias injection; rho=0.9636 > threshold=0.9; rank order preserved

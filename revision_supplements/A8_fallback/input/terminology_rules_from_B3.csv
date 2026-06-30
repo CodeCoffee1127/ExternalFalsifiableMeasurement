@@ -1,0 +1,11 @@
+rule_id,forbidden_term,required_replacement,rule_type,applies_to,enforcement,allowed_term,context
+B3-001,absolute entropy,ordinal verification-entropy index,mandatory,all_sections,strict,,
+B3-002,cardinal uncertainty,ordinal verification-entropy index,mandatory,all_sections,strict,,
+B3-003,true mechanism,protocol-defined failure pattern,mandatory,all_sections,strict,,
+B3-004,R² proves,R² indicates (diagnostic only),mandatory,results,strict,,
+B3-005,explains X% of variance,ordinal pattern stability index,mandatory,results,strict,,
+B3-006,model validity,model admissibility within protocol,mandatory,all_sections,strict,,
+B3-007,universal evaluation,within-protocol diagnostic,mandatory,"abstract, introduction, contributions",strict,,
+B3-008,,,permitted,all_sections,guideline,ordinal population-level protocol-defined diagnostic output,output specification
+B3-009,,,permitted,"results, discussion",guideline,within-task-family ordinal pattern stability,scope limitation
+B3-010,,,permitted,results,guideline,protocol-defined failure-pattern differentiation,failure analysis

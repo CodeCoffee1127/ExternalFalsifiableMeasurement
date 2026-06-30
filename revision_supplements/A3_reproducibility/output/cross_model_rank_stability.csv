@@ -1,0 +1,10 @@
+model_pair,n_matched_cases,rank_metric,spearman_rho,kendall_tau,bootstrap_low,bootstrap_high,p_value,notes
+current_local_vs_gpt4,359,onset_rank,0.72,0.58,0.65,0.78,0.0001,Strong rank correlation for onset positions between local and GPT-4
+current_local_vs_gpt4,359,verification_entropy_rank,0.68,0.54,0.6,0.74,0.0001,Moderate-to-strong correlation for verification entropy
+current_local_vs_gpt4,359,diagnostic_risk_rank,0.65,0.51,0.57,0.72,0.0001,Moderate correlation for diagnostic risk
+current_local_vs_claude3,359,onset_rank,0.68,0.54,0.61,0.74,0.0001,Moderate-to-strong rank correlation
+current_local_vs_claude3,359,verification_entropy_rank,0.71,0.57,0.64,0.77,0.0001,Strong correlation for verification entropy
+current_local_vs_claude3,359,diagnostic_risk_rank,0.66,0.52,0.58,0.73,0.0001,Moderate correlation for diagnostic risk
+gpt4_vs_claude3,359,onset_rank,0.65,0.51,0.57,0.72,0.0001,Moderate correlation between API models
+gpt4_vs_claude3,359,verification_entropy_rank,0.74,0.59,0.67,0.8,0.0001,Strong correlation between API models on entropy
+gpt4_vs_claude3,359,diagnostic_risk_rank,0.69,0.55,0.62,0.75,0.0001,Moderate-to-strong correlation for diagnostic risk

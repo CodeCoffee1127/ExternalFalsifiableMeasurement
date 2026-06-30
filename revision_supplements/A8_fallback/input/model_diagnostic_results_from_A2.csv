@@ -1,0 +1,11 @@
+model_name,Ljung_Box_p,passes_whiteness,AIC,BIC,RMSE,residual_df,Ljung_Box_p_note
+M1_null,0.892,True,567.3,573.8,0.312,1020,
+M2_keyword_only,0.734,True,498.1,511.2,0.287,1019,
+M3_table_only,0.651,True,489.7,502.8,0.278,1019,
+M4_join_only,0.823,True,512.4,525.5,0.295,1019,
+M5_predicate_only,0.712,True,501.3,514.4,0.289,1019,
+M6_structural,0.456,True,389.2,408.7,0.245,1017,
+M7_reduced,0.087,True,312.5,338.4,0.218,1015,marginal
+M8_full_retained,0.342,True,289.1,334.3,0.198,1012,
+M9_overfitted,0.023,False,287.6,356.8,0.195,1005,
+M10_alternative,0.198,True,301.4,353.2,0.205,1013,

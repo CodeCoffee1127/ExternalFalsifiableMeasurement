@@ -1,0 +1,50 @@
+{
+  "manifest_version": "1.0",
+  "directory": "A8_fallback/input/",
+  "description": "Input files for protocol state machine and fallback decision analysis (A8)",
+  "files": [
+    {
+      "filename": "diagnostic_decision_rules.yaml",
+      "type": "rules",
+      "description": "YAML defining all diagnostic decision rules",
+      "required": true
+    },
+    {
+      "filename": "model_diagnostic_results_from_A2.csv",
+      "type": "data",
+      "description": "Model diagnostic results from A2 analysis",
+      "required": true,
+      "rows": 10
+    },
+    {
+      "filename": "calibration_boundary_from_A7.csv",
+      "type": "data",
+      "description": "Calibration boundary states from A7",
+      "required": true,
+      "rows": 3
+    },
+    {
+      "filename": "scope_boundary_from_A4.csv",
+      "type": "data",
+      "description": "Scope boundary states from A4",
+      "required": true,
+      "rows": 5
+    },
+    {
+      "filename": "terminology_rules_from_B3.csv",
+      "type": "rules",
+      "description": "Terminology constraints from B3",
+      "required": true,
+      "rows": 10
+    },
+    {
+      "filename": "external_annotation_status_from_B2.csv",
+      "type": "data",
+      "description": "External annotator agreement status from B2",
+      "required": true,
+      "rows": 11
+    }
+  ],
+  "generated_date": "2025-01-15",
+  "protocol_version": "A8-1.0"
+}

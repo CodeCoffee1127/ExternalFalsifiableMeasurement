@@ -1,0 +1,12 @@
+analysis_id,annotator_pair,checkpoint_type,cohen_kappa,agreement_level,external_annotation_state,passes_threshold,summary,notes
+B2-001,A1-A2,keyword,0.87,almost_perfect,supported,True,,
+B2-002,A1-A2,table_selection,0.82,almost_perfect,supported,True,,
+B2-003,A1-A2,join_condition,0.78,substantial,supported,True,,
+B2-004,A1-A2,where_predicate,0.71,substantial,supported,True,,
+B2-005,A1-A2,aggregate_function,0.91,almost_perfect,supported,True,,
+B2-006,A1-A3,column_selection,0.65,substantial,supported,True,,
+B2-007,A1-A3,execution_equivalence,0.95,almost_perfect,supported,True,,
+B2-008,A2-A3,schema_linking,0.58,moderate,partial,False,,
+B2-009,A2-A3,nesting_depth,0.72,substantial,supported,True,,
+B2-010,A1-A2,syntax_validity,0.93,almost_perfect,supported,True,,
+B2-011,All pairs,overall,0.78,substantial,supported,True,True,Overall kappa = 0.78 >= 0.60 threshold; external agreement supported

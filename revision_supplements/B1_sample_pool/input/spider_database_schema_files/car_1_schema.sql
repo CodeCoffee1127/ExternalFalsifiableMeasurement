@@ -1,0 +1,2 @@
+-- Schema for car_1
+-- Placeholder SQL file

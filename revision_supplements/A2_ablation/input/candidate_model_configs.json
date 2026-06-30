@@ -1,0 +1,208 @@
+[
+  {
+    "model_id": "M0",
+    "model_name": "M0",
+    "free_parameters": 3,
+    "included_terms": [
+      "intercept"
+    ],
+    "excluded_terms": [
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t",
+      "step_FE"
+    ],
+    "R2_target": 0.0,
+    "adj_R2_target": 0.0,
+    "notes": "Baseline null model",
+    "description": "Intercept only (null model)"
+  },
+  {
+    "model_id": "M1",
+    "model_name": "M1",
+    "free_parameters": 4,
+    "included_terms": [
+      "intercept",
+      "step_FE"
+    ],
+    "excluded_terms": [
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t"
+    ],
+    "R2_target": 0.82,
+    "adj_R2_target": 0.819,
+    "notes": "Captures position-dependent baseline",
+    "description": "Step fixed effects only"
+  },
+  {
+    "model_id": "M2",
+    "model_name": "M2",
+    "free_parameters": 5,
+    "included_terms": [
+      "intercept",
+      "lag_A_t"
+    ],
+    "excluded_terms": [
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "step_FE"
+    ],
+    "R2_target": 0.71,
+    "adj_R2_target": 0.709,
+    "notes": "Captures autocorrelation",
+    "description": "Lagged A_t only"
+  },
+  {
+    "model_id": "M3",
+    "model_name": "M3",
+    "free_parameters": 6,
+    "included_terms": [
+      "intercept",
+      "H_t",
+      "delta_H"
+    ],
+    "excluded_terms": [
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t",
+      "step_FE"
+    ],
+    "R2_target": 0.78,
+    "adj_R2_target": 0.778,
+    "notes": "Entropy-based predictors",
+    "description": "H_t + delta_H"
+  },
+  {
+    "model_id": "M4",
+    "model_name": "M4",
+    "free_parameters": 7,
+    "included_terms": [
+      "intercept",
+      "I_plus",
+      "I_minus",
+      "I_nec"
+    ],
+    "excluded_terms": [
+      "H_t",
+      "delta_H",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t",
+      "step_FE"
+    ],
+    "R2_target": 0.75,
+    "adj_R2_target": 0.748,
+    "notes": "Information-theoretic predictors",
+    "description": "I_plus + I_minus + I_nec"
+  },
+  {
+    "model_id": "M5",
+    "model_name": "M5",
+    "free_parameters": 8,
+    "included_terms": [
+      "intercept",
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec"
+    ],
+    "excluded_terms": [
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t",
+      "step_FE"
+    ],
+    "R2_target": 0.88,
+    "adj_R2_target": 0.878,
+    "notes": "Core continuous predictors",
+    "description": "H_t + delta_H + I_plus + I_minus + I_nec"
+  },
+  {
+    "model_id": "M6",
+    "model_name": "M6",
+    "free_parameters": 9,
+    "included_terms": [
+      "intercept",
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass"
+    ],
+    "excluded_terms": [
+      "lag_A_t",
+      "step_FE"
+    ],
+    "R2_target": 0.91,
+    "adj_R2_target": 0.908,
+    "notes": "Adds flag indicators",
+    "description": "All continuous + flags"
+  },
+  {
+    "model_id": "M7",
+    "model_name": "M7",
+    "free_parameters": 10,
+    "included_terms": [
+      "intercept",
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t"
+    ],
+    "excluded_terms": [
+      "step_FE"
+    ],
+    "R2_target": 0.93,
+    "adj_R2_target": 0.928,
+    "notes": "Adds lag term",
+    "description": "All continuous + flags + lag"
+  },
+  {
+    "model_id": "M8",
+    "model_name": "M8",
+    "free_parameters": 12,
+    "included_terms": [
+      "intercept",
+      "H_t",
+      "delta_H",
+      "I_plus",
+      "I_minus",
+      "I_nec",
+      "burst_flag",
+      "gate_pass",
+      "lag_A_t",
+      "step_FE"
+    ],
+    "excluded_terms": [],
+    "R2_target": 0.945,
+    "adj_R2_target": 0.944,
+    "notes": "Retained model after ablation",
+    "description": "Full retained model (all terms)"
+  }
+]

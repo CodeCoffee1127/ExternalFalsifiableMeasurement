@@ -1,0 +1,11 @@
+term,risk_type,forbidden_context,replacement,notes
+absolute uncertainty,cardinal_overclaim,Any quantitative claim about uncertainty,ordinal diagnostic resolution,"Entropy scores are ordinal, not absolute"
+cardinal entropy,cardinal_overclaim,Interpreting entropy values cardinally,rank-order diagnostic indicator,Shannon entropy here is used ordinally
+true failure mechanism,truth_claim,Pattern labels as truth-revealing,protocol-defined failure-pattern differentiation,"Patterns are protocol-defined, not discovered truths"
+mechanism recovery,causal_overclaim,Results as recovering mechanisms,pattern characterization,"We characterize patterns, not recover mechanisms"
+hidden causal mechanism,causal_claim,Methodology as revealing hidden causes,post-hoc diagnostic protocol,"Diagnostic, not causal"
+broad LLM reasoning validity,generalization_overclaim,Extending beyond task family,within-task-family assessment,Scope limited to text-to-SQL
+architecture-independent,generalization_overclaim,Claims about model architecture,model-specific with caveats,Results may not transfer across architectures
+universal evaluation instrument,universality_claim,Evaluation tool claims,task-family-specific evaluation,Designed for chain-of-thought text-to-SQL
+external ground truth,truth_claim,Referring to annotator labels,independent blinded annotation reference,"Annotators provide reference, not ground truth"
+individual-chain prediction,scope_overclaim,Per-case diagnostic claims,population-level diagnostic summary,"Results are aggregate, not per-case predictions"

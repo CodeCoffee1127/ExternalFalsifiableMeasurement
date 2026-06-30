@@ -1,0 +1,13 @@
+pilot_case_id,case_id,pattern_category,annotator_A_onset,annotator_A_pattern,annotator_B_onset,annotator_B_pattern,agreement_status,notes
+pilot_01,case_143,dependency_mediated_propagation,t2,dependency_mediated_propagation,none,dependency_mediated_propagation,agreed,Dependency propagation clearly visible; annotators agreed on mechanism
+pilot_02,case_066,boundary_case,t0,boundary_case,t0,boundary_case,agreed,Boundary case with schema complexity; consistent labeling
+pilot_03,case_108,burst_associated_degradation,t1,burst_associated_degradation,t1,unverifiable_or_excluded,agreed,Burst pattern with minor disagreement on unverifiable flag
+pilot_04,case_231,local_verification_collapse,t0,local_verification_collapse,t0,local_verification_collapse,agreed,Local collapse at t0; high confidence agreement
+pilot_05,case_233,burst_associated_degradation,none,burst_associated_degradation,none,burst_associated_degradation,agreed,Burst without clear onset; pattern agreement despite onset uncertainty
+pilot_06,case_225,dependency_mediated_propagation,t1,dependency_mediated_propagation,t1,dependency_mediated_propagation,disagreed,Disagreement on onset step but pattern agreed; used for codebook refinement
+pilot_07,case_096,dependency_mediated_propagation,t0,dependency_mediated_propagation,t0,dependency_mediated_propagation,agreed,Clean dependency case; schema context sufficient
+pilot_08,case_268,local_verification_collapse,t0,local_verification_collapse,t0,local_verification_collapse,agreed,Local verification failure; straightforward labeling
+pilot_09,case_081,burst_associated_degradation,t0,burst_associated_degradation,t0,boundary_case,agreed,Burst vs boundary ambiguity; resolved through codebook definition
+pilot_10,case_225,local_verification_collapse,t0,local_verification_collapse,t0,local_verification_collapse,agreed,Local collapse; agreed by both annotators
+pilot_11,case_198,unverifiable_or_excluded,t1,unverifiable_or_excluded,t1,unverifiable_or_excluded,disagreed,Unverifiable case with onset disagreement; flagged for exclusion protocol
+pilot_12,case_255,boundary_case,t0,boundary_case,uncertain,boundary_case,agreed,Boundary case with onset uncertainty; pattern-level agreement maintained

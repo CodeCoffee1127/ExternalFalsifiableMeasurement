@@ -1,0 +1,15 @@
+current_state,trigger,condition_met,next_state,fallback_action,allowed_claim_change,requires_sensitivity_analysis,notes
+cardinal_rejected_ordinal_only,calibration_bias > 0.15,True,retained_model_admissible,restrict_to_ordinal_claims,cardinal → ordinal only,False,Calibrate ordinal interpretation; no cardinal probability
+cardinal_rejected_ordinal_only,calibration_bias <= 0.15,False,cardinal_rejected_ordinal_only,none,none,False,Cardinal interpretation remains available
+original_specification_rejected,held_out_R2 < 0,False,retained_model_admissible,none,none,False,M8 held-out R² = 0.42 > 0; specification not rejected
+original_specification_rejected,held_out_R2 < 0,True,non_identifiable,reject_specification,model → descriptive only,False,No admissible model; fall back to descriptive statistics
+retained_model_admissible,Ljung_Box_p > 0.05 AND not_dominated,True,external_agreement_supported,none,none,False,M8 passes all checks; proceed to external validation
+retained_model_provisional,0.01 < Ljung_Box_p <= 0.05,False,retained_model_admissible,none,none,False,M8 Ljung-Box p = 0.342 > 0.05; not provisional
+retained_model_provisional,near_dominated,False,retained_model_admissible,none,none,False,M8 not dominated; AIC and BIC competitive
+non_identifiable,Ljung_Box_p <= 0.01 AND simpler_better,False,retained_model_admissible,none,none,False,M8 passes whiteness; not non-identifiable
+scope_boundary,nesting_depth > 3 OR unverifiable,True,unverifiable_excluded,exclude_instance,exclude → no inference,False,2 of 5 test instances excluded at scope boundary
+scope_boundary,nesting_depth <= 3 AND verifiable,True,unverifiable_excluded,include_instance,none,False,3 of 5 test instances within scope
+unverifiable_excluded,P4_gate_fails,False,retained_model_admissible,none,none,False,P4 gate passed for included instances
+external_agreement_supported,kappa >= 0.60,True,retained_model_admissible,confirm_validation,none,False,Overall kappa = 0.78; validation confirmed
+external_agreement_partial,0.40 <= kappa < 0.60,False,retained_model_admissible,none,none,False,Schema linking kappa = 0.58; flagged as partial for that checkpoint only
+external_agreement_not_supported,kappa < 0.40,False,retained_model_admissible,none,none,False,No instances below 0.40 threshold

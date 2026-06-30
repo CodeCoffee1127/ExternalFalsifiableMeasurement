@@ -1,0 +1,4 @@
+difficulty_tier,n_cases,n_checkpoints,n_checkable_checkpoints,n_unverifiable_checkpoints,gate_exclusion_rate,excluded_from_dynamics_rate,boundary_case_rate
+standard,225,533,447,43,0.0807,0.1088,0.2645
+complex,111,333,197,69,0.2072,0.2913,0.3243
+deep_nesting,33,99,50,36,0.3636,0.4141,1.0

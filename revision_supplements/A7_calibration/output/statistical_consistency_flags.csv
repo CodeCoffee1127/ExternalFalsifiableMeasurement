@@ -1,0 +1,7 @@
+issue_id,statistic,location,reported_value,expected_or_recomputed_value,is_consistent,action_required,notes
+FLAG_001,required_N,"Section 4.3.1, para 3",N > 200,"N=200 (tested), still fails threshold",False,clarify_manuscript,Manuscript says 'N>200 required' but tested exactly N=200; should clarify that N=200 was tested and found insufficient
+FLAG_002,spearman_rho,"Section 4.3.2, para 1",-1.0,0.882,False,correct_manuscript,Spearman rho=-1 is impossible with finite t=2.5; corrected value is 0.882 with t=5.89
+FLAG_003,bias_format,"Section 4.3.1, para 2",0.33 (rounded),0.328,False,correct_manuscript,"Full precision 0.3280 should be reported, not rounded to 0.33, given the 0.02 threshold precision"
+FLAG_004,differential_validity_rho,"Section 4.3.4, para 1",0.9636,0.9636,True,none,50% bias injection rho=0.9636 correctly reported; passes 0.90 threshold
+FLAG_005,cardinal_threshold_status,"Section 4.3.1, para 2",fails at N=50 and N=200,fails at N=50 (bias=0.50) and N=200 (bias=0.328),True,none,Both reported failures match recomputed values
+FLAG_006,t_value_significance,"Section 4.3.2, para 1 (corrected)","t=2.5, p=0.01 (original error)","t=5.89, p<0.000001",False,correct_manuscript,Original t=2.5 inconsistent with rho=-1; corrected t=5.89 consistent with rho=0.882

@@ -1,0 +1,78 @@
+# Stratified Sampling Protocol Configuration
+# Version: 1.0
+
+protocol:
+  name: "CPFC Annotation Sample Stratification"
+  target_N: 100
+  source_split: "dtest"
+  total_source_cases: 369
+  random_seed: 42
+
+strata:
+  # Onset strata (must sum to ~100 with overlap)
+  onset_strata:
+    onset_t0:
+      target_count: 25
+      cpfc_onset_value: "t0"
+      priority: 1
+    onset_t1:
+      target_count: 22
+      cpfc_onset_value: "t1"
+      priority: 2
+    onset_t2:
+      target_count: 18
+      cpfc_onset_value: "t2"
+      priority: 3
+    onset_none:
+      target_count: 15
+      cpfc_onset_value: "none"
+      priority: 4
+    onset_uncertain:
+      target_count: 10
+      source_flags: ["boundary", "unverifiable"]
+      priority: 5
+
+  # Pattern strata
+  pattern_strata:
+    pattern_local:
+      target_count: 28
+      cpfc_pattern: "local_verification_collapse"
+      max_share: 0.60
+    pattern_dependency:
+      target_count: 24
+      cpfc_pattern: "dependency_mediated_propagation"
+    pattern_burst:
+      target_count: 16
+      cpfc_pattern: "burst_associated_degradation"
+    pattern_boundary:
+      target_count: 18
+      cpfc_pattern: "boundary_case"
+    pattern_unverifiable:
+      target_count: 14
+      cpfc_pattern: "unverifiable_or_excluded"
+
+constraints:
+  # Diversity constraints
+  min_onset_per_class: 15
+  min_pattern_per_class: 15
+  max_ordinary_pattern_share: 0.60
+
+  # Pair eligibility targets
+  pair_A_eligible:
+    description: "Same endpoint fail, different onset"
+    target_min: 15
+  pair_B_eligible:
+    description: "Same onset, different pattern"
+    target_min: 15
+  pair_C_eligible:
+    description: "Standard vs deep-nesting"
+    target_min: 8
+  selected_pairs_A: 3
+  selected_pairs_B: 3
+  selected_pairs_C: 2
+
+  # Exclusion criteria
+  exclude_if:
+    - unverifiable_flag AND no_checkpoint_material
+    - fewer_than_2_checkpoints
+    - corrupt_schema_file

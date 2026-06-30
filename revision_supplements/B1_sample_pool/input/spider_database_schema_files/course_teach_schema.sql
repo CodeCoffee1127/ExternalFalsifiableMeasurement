@@ -1,0 +1,2 @@
+-- Schema for course_teach
+-- Placeholder SQL file

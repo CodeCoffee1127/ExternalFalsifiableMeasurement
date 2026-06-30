@@ -1,0 +1,13 @@
+model_source,pattern_label,count,share,confidence_interval_low,confidence_interval_high
+current_local,local,167,0.4541,0.4033,0.5049
+current_local,dependency,117,0.3175,0.27,0.365
+current_local,burst,47,0.1293,0.095,0.1635
+current_local,boundary,35,0.0949,0.065,0.1248
+gpt4,local,164,0.4455,0.3948,0.4962
+gpt4,dependency,109,0.2966,0.25,0.3432
+gpt4,burst,53,0.1441,0.1083,0.1799
+gpt4,boundary,34,0.0936,0.0639,0.1233
+claude3,local,158,0.4301,0.3796,0.4806
+claude3,dependency,104,0.284,0.238,0.3301
+claude3,burst,52,0.1436,0.1078,0.1794
+claude3,boundary,40,0.1085,0.0768,0.1402

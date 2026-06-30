@@ -1,0 +1,2 @@
+-- Schema file for hospital (placeholder)
+-- Contains CREATE TABLE statements

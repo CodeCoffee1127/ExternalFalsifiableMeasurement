@@ -1,0 +1,7 @@
+statement_id,section,statement_text,audit_status,identified_issue,recommended_action,resolution_status
+stmt_001,"Section 4.3.1, para 2","Reported bias=0.5, rho=N/A, N=50",pass,None,None,verified
+stmt_002,"Section 4.3.1, para 2","Reported bias=0.328, rho=0.882, N=200",pass,None,None,verified
+stmt_003,"Section 4.3.2, para 1","Reported bias=N/A, rho=0.882, N=200",fail,Inconsistent statistics,Correct in manuscript,pending
+stmt_004,"Section 4.3.2, para 1 (error)","Reported bias=N/A, rho=-1.0, N=200",fail,Inconsistent statistics,Correct in manuscript,pending
+stmt_005,"Section 4.3.3, para 1","Reported bias=~0.25 at N=369, rho=0.91, N=N>200",pass,None,None,verified
+stmt_006,"Section 4.3.4, para 1","Reported bias=N/A (bias injection test), rho=0.9636, N=200",pass,None,None,verified

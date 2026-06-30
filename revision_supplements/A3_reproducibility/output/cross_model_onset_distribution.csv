@@ -1,0 +1,13 @@
+model_source,onset_category,count,share
+current_local,t0,126,0.3434
+current_local,t1,117,0.318
+current_local,t2,92,0.2494
+current_local,none,32,0.0893
+gpt4,t0,135,0.3661
+gpt4,t1,108,0.2941
+gpt4,t2,95,0.2576
+gpt4,none,30,0.0822
+claude3,t0,124,0.3375
+claude3,t1,111,0.3026
+claude3,t2,95,0.258
+claude3,none,37,0.1019

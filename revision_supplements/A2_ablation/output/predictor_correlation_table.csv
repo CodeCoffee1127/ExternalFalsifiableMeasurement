@@ -1,0 +1,17 @@
+predictor_1,predictor_2,pearson_r,spearman_rho,vif_if_applicable,shared_construction_risk,notes
+H_t,delta_H,0.3475,0.329,1.366,medium,Correlation between H_t and delta_H
+H_t,A_t,-0.718,-0.7069,2.0764,high,Correlation between H_t and A_t
+H_t,I_plus,-0.4569,-0.4288,1.4331,medium,Correlation between H_t and I_plus
+H_t,I_minus,0.552,0.5242,1.4337,medium,Correlation between H_t and I_minus
+H_t,I_nec,0.2704,0.2594,1.4162,low,Correlation between H_t and I_nec
+delta_H,A_t,-0.4858,-0.4564,1.0917,medium,Correlation between delta_H and A_t
+delta_H,I_plus,-0.2239,-0.1995,1.216,low,Correlation between delta_H and I_plus
+delta_H,I_minus,0.3758,0.3522,1.0697,low,Correlation between delta_H and I_minus
+A_t,I_plus,0.4158,0.3973,1.228,medium,Correlation between A_t and I_plus
+A_t,I_minus,-0.3443,-0.336,1.2571,low,Correlation between A_t and I_minus
+A_t,I_nec,0.2518,0.2209,1.3038,low,Correlation between A_t and I_nec
+I_plus,I_minus,-0.1866,-0.1687,1.4744,low,Correlation between I_plus and I_minus
+I_plus,I_nec,0.1593,0.1462,1.1523,low,Correlation between I_plus and I_nec
+I_minus,I_nec,-0.128,-0.1063,1.2201,low,Correlation between I_minus and I_nec
+burst_flag,H_t,0.4424,0.4199,1.0172,medium,Correlation between burst_flag and H_t
+gate_pass,A_t,0.3882,0.3552,1.3313,low,Correlation between gate_pass and A_t

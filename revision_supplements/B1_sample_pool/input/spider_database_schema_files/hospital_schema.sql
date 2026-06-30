@@ -1,0 +1,2 @@
+-- Schema for hospital
+-- Placeholder SQL file

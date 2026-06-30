@@ -1,0 +1,87 @@
+% Original Manuscript Draft - CPFC Protocol Paper
+% WARNING: This version contains forbidden phrases that must be revised
+
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\title{Ordinal Verification-Entropy: A Novel Framework for LLM Evaluation}
+\author{Anonymous}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We propose a new framework for evaluating large language model reasoning using absolute entropy measures derived from checkpoint-frequency analysis. Our method, called ordinal verification-entropy, provides a cardinal uncertainty measure for SQL generation tasks. The framework reveals the true mechanism behind model failures and enables failure mechanism recovery across broad LLM reasoning tasks. We demonstrate strong explanatory fit proves the validity of our approach as a universal evaluation instrument that is architecture-independent. Results show that our method achieves individual-chain prediction accuracy superior to existing baselines, suggesting general LLM reasoning validity.
+\end{abstract}
+
+\section{Introduction}
+The rapid advancement of large language models has created an urgent need for robust evaluation methodologies. Current approaches suffer from several limitations, including an inability to capture the hidden causal mechanism underlying model errors. In this paper, we introduce the CPFC protocol and ordinal verification-entropy as an absolute entropy measure for assessing LLM outputs.
+
+Our approach is based on the observation that broad LLM reasoning tasks can be decomposed into discrete checkpoints, each with verifiable outcomes. By computing the cardinal uncertainty at each checkpoint, we obtain a fine-grained profile of model behavior. This universal evaluation instrument can be applied to any transformer-based architecture, making it architecture-independent.
+
+\section{Related Work}
+Existing evaluation frameworks typically rely on aggregate accuracy scores or reference-based metrics. These approaches fail to reveal the true mechanism of model errors and do not support failure mechanism recovery. Several works have proposed uncertainty quantification methods, but none provide a cardinal uncertainty measure that is both architecture-independent and applicable to broad LLM reasoning.
+
+\section{Methodology}
+\subsection{The CPFC Protocol}
+The Checklist-Protocol-Fit-Condition (CPFC) protocol defines four necessary conditions for applying ordinal verification-entropy analysis. We demonstrate that the Spider text-to-SQL task satisfies all four conditions, making it eligible for our framework.
+
+\subsection{Verification-Entropy Computation}
+The verification-entropy $H_v$ is computed as:
+\begin{equation}
+H_v = -\sum_{i=1}^{k} p_i \log_2(p_i)
+\end{equation}
+where $p_i$ represents the frequency of each error pattern at a given checkpoint. This absolute entropy measure provides a cardinal uncertainty index for each checkpoint.
+
+The $R^2$ value of 0.85 indicates that our model explains 85\% of the variance, proving the validity of our approach. The strong explanatory fit proves that ordinal verification-entropy captures the hidden causal mechanism of model failures.
+
+\subsection{Model Specification}
+We specify a full model $M_8$ with eight predictors derived from checkpoint frequencies. The model achieves a held-out $R^2$ of 0.42, which represents substantial explanatory power for this domain.
+
+\section{Experimental Setup}
+We evaluate five LLM families on the Spider development set. The models include GPT-4, Claude-3, PaLM-2, LLaMA-2, and CodeLLaMA. For each model, we generate SQL queries and apply the CPFC protocol to extract checkpoint-level outcomes.
+
+\section{Results}
+\subsection{Main Results}
+Table~\\ref{tab:main} presents the ordinal verification-entropy scores for each model. The results demonstrate broad LLM reasoning patterns, with general LLM reasoning validity confirmed across all model families.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccc}
+\toprule
+Model & $H_v$ & $R^2$ & AIC & BIC \\
+\midrule
+GPT-4 & 0.23 & 0.85 & 245.3 & 289.1 \\
+Claude-3 & 0.31 & 0.78 & 267.8 & 311.6 \\
+PaLM-2 & 0.45 & 0.62 & 312.4 & 356.2 \\
+LLaMA-2 & 0.67 & 0.41 & 389.7 & 433.5 \\
+CodeLLaMA & 0.52 & 0.55 & 334.1 & 377.9 \\
+\bottomrule
+\end{tabular}
+\caption{Ordinal verification-entropy scores. The $R^2$ values prove model validity.}
+\label{tab:main}
+\end{table}
+
+The $R^2$ of 0.85 for GPT-4 is a strong explanatory fit proves our framework captures the essential structure of model reasoning. This universal evaluation instrument provides individual-chain prediction capability for each model.
+
+\subsection{Failure Analysis}
+Our analysis reveals the hidden causal mechanism behind model failures. The failure mechanism recovery process identifies distinct error patterns that are consistent across model architectures, confirming the architecture-independent nature of our approach.
+
+\section{Contributions}
+Our main contributions are:
+\begin{enumerate}
+    \item We propose ordinal verification-entropy as a cardinal uncertainty measure for LLM evaluation.
+    \item We introduce the CPFC protocol as a universal evaluation instrument for broad LLM reasoning.
+    \item We demonstrate that our method is architecture-independent and applies to general LLM reasoning validity assessment.
+    \item We provide a framework for individual-chain prediction of model failures.
+    \item Our strong explanatory fit proves the validity of the ordinal approach.
+\end{enumerate}
+
+\section{Conclusion}
+We have presented ordinal verification-entropy as an absolute entropy measure for evaluating LLM reasoning. The CPFC protocol ensures that the method is applied only in appropriate domains. Our results demonstrate that the framework provides a true mechanism for understanding model failures and supports failure mechanism recovery across diverse tasks. The architecture-independent nature of the approach makes it a universal evaluation instrument for broad LLM reasoning.
+
+\section*{Acknowledgments}
+We thank the anonymous reviewers for their feedback.
+
+\end{document}

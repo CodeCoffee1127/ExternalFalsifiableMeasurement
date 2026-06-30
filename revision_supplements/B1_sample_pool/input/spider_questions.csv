@@ -1,0 +1,101 @@
+case_id,spider_question_id,database_id,spider_question_text,question_language
+case_001,question_001,flight_2,Show me the complaints where id is USA.,en
+case_002,question_002,store_1,List the top 23 employees by budget.,en
+case_003,question_003,customer_complaints,What are the names of all players?,en
+case_004,question_004,world_1,List orders ordered by type descending.,en
+case_005,question_005,course_teach,Show the doctors grouped by category having count greater than 5.,en
+case_006,question_006,hospital,Find all players joined with concerts on budget.,en
+case_007,question_007,soccer_1,Show the age and rating of all manufacturers.,en
+case_008,question_008,flight_2,How many departments have score equal to open?,en
+case_009,question_009,cre_Doc_Template_Mgt,Count the number of players per city.,en
+case_010,question_010,employee_hire_evaluation,Find the flights that has the most cars.,en
+case_011,question_011,flight_2,List the top 34 kennels by year.,en
+case_012,question_012,employee_hire_evaluation,Find all doctors joined with airports on year.,en
+case_013,question_013,hospital,What is the average year of courses?,en
+case_014,question_014,customer_complaints,How many students are there?,en
+case_015,question_015,world_1,What is the total status for each products?,en
+case_016,question_016,hospital,Show me the products where id is open.,en
+case_017,question_017,cre_Doc_Template_Mgt,What are the names of all airports?,en
+case_018,question_018,dog_kennels,"What employees have number in (active, standard)?",en
+case_019,question_019,world_1,"What products have salary in (active, false)?",en
+case_020,question_020,concert_singer,How many kennels are there?,en
+case_021,question_021,employee_hire_evaluation,Find complaints where type is between 4 and 126.,en
+case_022,question_022,course_teach,Find manufacturers where age is between 88 and 226.,en
+case_023,question_023,store_1,Which hospitals do not have a budget?,en
+case_024,question_024,car_1,What is the average count of complaints?,en
+case_025,question_025,hospital,Which cars has the highest budget?,en
+case_026,question_026,cre_Doc_Template_Mgt,"What doctors have rating in (active, standard)?",en
+case_027,question_027,cre_Doc_Template_Mgt,How many countries have salary equal to active?,en
+case_028,question_028,dog_kennels,Find concerts where type is between 38 and 207.,en
+case_029,question_029,concert_singer,Find all courses joined with complaints on salary.,en
+case_030,question_030,course_teach,Count the number of teachers per status.,en
+case_031,question_031,world_1,Show the count and salary of all dogs.,en
+case_032,question_032,hospital,List complaints ordered by date descending.,en
+case_033,question_033,world_1,Show the size and salary of all hospitals.,en
+case_034,question_034,concert_singer,How many orders are there?,en
+case_035,question_035,world_1,Find departments where price is between 38 and 71.,en
+case_036,question_036,dog_kennels,Find the status of singers that status is premium.,en
+case_037,question_037,course_teach,What is the total year for each matches?,en
+case_038,question_038,customer_complaints,What is the total year for each concerts?,en
+case_039,question_039,concert_singer,Find the number of dogs that number is A.,en
+case_040,question_040,course_teach,Count the number of customers per country.,en
+case_041,question_041,cre_Doc_Template_Mgt,Show the matches grouped by category having count greater than 71.,en
+case_042,question_042,soccer_1,What is the average price of singers?,en
+case_043,question_043,hospital,What is the minimum year among courses with year is active?,en
+case_044,question_044,course_teach,What is the average status of players?,en
+case_045,question_045,flight_2,List patients ordered by price descending.,en
+case_046,question_046,world_1,Find the salary of departments that salary is true.,en
+case_047,question_047,world_1,What is the minimum type among manufacturers with type is USA?,en
+case_048,question_048,soccer_1,Show me the teachers where type is true.,en
+case_049,question_049,soccer_1,What are the names of all complaints?,en
+case_050,question_050,employee_hire_evaluation,List cities ordered by date descending.,en
+case_051,question_051,cre_Doc_Template_Mgt,Which dogs do not have a number?,en
+case_052,question_052,course_teach,Find the year of singers that year is A.,en
+case_053,question_053,customer_complaints,Show the dogs grouped by category having count greater than 9.,en
+case_054,question_054,world_1,What are the names of all kennels?,en
+case_055,question_055,concert_singer,List the airports with rating greater than 50.,en
+case_056,question_056,hospital,Show me the cities where type is open.,en
+case_057,question_057,concert_singer,Find all manufacturers joined with dogs on type.,en
+case_058,question_058,soccer_1,List the departments with salary greater than 72.,en
+case_059,question_059,world_1,Show the orders grouped by country having count greater than 13.,en
+case_060,question_060,customer_complaints,List the players with rating greater than 54.,en
+case_061,question_061,customer_complaints,What is the average size of courses?,en
+case_062,question_062,car_1,Which manufacturers do not have a date?,en
+case_063,question_063,flight_2,What are the names of all students?,en
+case_064,question_064,flight_2,Find the teachers that has the most students.,en
+case_065,question_065,cre_Doc_Template_Mgt,What is the total type for each kennels?,en
+case_066,question_066,cre_Doc_Template_Mgt,Count the number of flights per type.,en
+case_067,question_067,world_1,Find cities where count is between 59 and 112.,en
+case_068,question_068,course_teach,List matches ordered by id descending.,en
+case_069,question_069,dog_kennels,What is the minimum type among flights with type is premium?,en
+case_070,question_070,cre_Doc_Template_Mgt,List the top 25 departments by year.,en
+case_071,question_071,concert_singer,List the patients with number greater than 42.,en
+case_072,question_072,store_1,Find all singers joined with matches on budget.,en
+case_073,question_073,car_1,How many kennels have status equal to true?,en
+case_074,question_074,car_1,Find the students that has the most cities.,en
+case_075,question_075,cre_Doc_Template_Mgt,Find products where age is between 2 and 160.,en
+case_076,question_076,customer_complaints,Find students where count is between 24 and 86.,en
+case_077,question_077,soccer_1,Show the manufacturers grouped by status having count greater than 2.,en
+case_078,question_078,course_teach,How many manufacturers are there?,en
+case_079,question_079,flight_2,Find the name of dogs that name is active.,en
+case_080,question_080,course_teach,What is the minimum type among students with type is true?,en
+case_081,question_081,soccer_1,Which dogs has the highest age?,en
+case_082,question_082,soccer_1,Which singers has the highest number?,en
+case_083,question_083,world_1,What is the total score for each cities?,en
+case_084,question_084,store_1,What are the names of all products?,en
+case_085,question_085,course_teach,List patients ordered by year descending.,en
+case_086,question_086,store_1,Show the kennels grouped by year having count greater than 43.,en
+case_087,question_087,car_1,How many students are there?,en
+case_088,question_088,customer_complaints,Find all orders joined with countries on status.,en
+case_089,question_089,customer_complaints,List the singers with name greater than 53.,en
+case_090,question_090,hospital,Show the size and score of all cities.,en
+case_091,question_091,dog_kennels,What is the minimum id among countries with id is premium?,en
+case_092,question_092,concert_singer,What is the average rating of airports?,en
+case_093,question_093,store_1,Find the complaints that has the most teachers.,en
+case_094,question_094,store_1,What are the names of all orders?,en
+case_095,question_095,store_1,"What concerts have count in (true, B)?",en
+case_096,question_096,employee_hire_evaluation,Which countries has the highest budget?,en
+case_097,question_097,course_teach,Find all countries joined with courses on salary.,en
+case_098,question_098,course_teach,"What employees have status in (true, inactive)?",en
+case_099,question_099,store_1,What is the minimum score among employees with score is true?,en
+case_100,question_100,store_1,List the kennels with name greater than 13.,en

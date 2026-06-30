@@ -1,0 +1,45 @@
+file_path,line_number,before_text,after_text,replacement_category,approved_by,status
+manuscript_original.tex,12,absolute entropy measures,ordinal verification-entropy indices,forbidden_to_allowed,T-001,fixed
+manuscript_original.tex,12,cardinal uncertainty measure,ordinal verification-entropy index,forbidden_to_allowed,T-001,fixed
+manuscript_original.tex,13,true mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-001,fixed
+manuscript_original.tex,13,failure mechanism recovery,protocol-defined failure-pattern differentiation,forbidden_to_allowed,T-001,fixed
+manuscript_original.tex,14,broad LLM reasoning tasks,within-task-family ordinal patterns,forbidden_to_allowed,T-002,fixed
+manuscript_original.tex,14,universal evaluation instrument,within-protocol diagnostic protocol,forbidden_to_allowed,T-002,fixed
+manuscript_original.tex,14,architecture-independent,within-protocol applicable,forbidden_to_allowed,T-002,fixed
+manuscript_original.tex,15,individual-chain prediction,ordinal population-level protocol-defined diagnostic output,forbidden_to_allowed,T-003,fixed
+manuscript_original.tex,15,general LLM reasoning validity,within-task-family ordinal pattern stability,forbidden_to_allowed,T-003,fixed
+manuscript_original.tex,15,strong explanatory fit proves,ordinal pattern stability observed,forbidden_to_allowed,T-003,fixed
+manuscript_original.tex,20,hidden causal mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-004,fixed
+manuscript_original.tex,22,absolute entropy measure,ordinal verification-entropy index,forbidden_to_allowed,T-004,fixed
+manuscript_original.tex,24,cardinal uncertainty,ordinal verification-entropy index,forbidden_to_allowed,T-005,fixed
+manuscript_original.tex,26,broad LLM reasoning tasks,within-task-family ordinal patterns,forbidden_to_allowed,T-005,fixed
+manuscript_original.tex,26,universal evaluation instrument,within-protocol diagnostic protocol,forbidden_to_allowed,T-005,fixed
+manuscript_original.tex,32,true mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-006,fixed
+manuscript_original.tex,32,failure mechanism recovery,protocol-defined failure-pattern differentiation,forbidden_to_allowed,T-006,fixed
+manuscript_original.tex,33,cardinal uncertainty measure,ordinal verification-entropy index,forbidden_to_allowed,T-006,fixed
+manuscript_original.tex,47,absolute entropy measure,ordinal verification-entropy index,forbidden_to_allowed,T-007,fixed
+manuscript_original.tex,49,R² value of 0.85,held-out R² = 0.42 (diagnostic indicator only),overclaim_to_safe,T-007,fixed
+manuscript_original.tex,51,strong explanatory fit proves,ordinal pattern stability observed,forbidden_to_allowed,T-007,fixed
+manuscript_original.tex,51,hidden causal mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-008,fixed
+manuscript_original.tex,65,broad LLM reasoning patterns,within-task-family ordinal pattern stability,forbidden_to_allowed,T-009,fixed
+manuscript_original.tex,65,general LLM reasoning validity,within-task-family ordinal pattern stability,forbidden_to_allowed,T-009,fixed
+manuscript_original.tex,80,R² of 0.85 for GPT-4,held-out R² = 0.42 (ordinal diagnostic),overclaim_to_safe,T-010,fixed
+manuscript_original.tex,80,strong explanatory fit proves,ordinal pattern stability observed,forbidden_to_allowed,T-010,fixed
+manuscript_original.tex,84,hidden causal mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-011,fixed
+manuscript_original.tex,84,failure mechanism recovery,protocol-defined failure-pattern differentiation,forbidden_to_allowed,T-011,fixed
+manuscript_original.tex,84,architecture-independent,within-protocol applicable,forbidden_to_allowed,T-011,fixed
+manuscript_original.tex,90,cardinal uncertainty measure,ordinal diagnostic index,forbidden_to_allowed,T-012,fixed
+manuscript_original.tex,91,universal evaluation instrument,within-protocol diagnostic,forbidden_to_allowed,T-012,fixed
+manuscript_original.tex,92,architecture-independent,within-protocol applicable,forbidden_to_allowed,T-013,fixed
+manuscript_original.tex,92,general LLM reasoning validity,within-task-family ordinal pattern stability,forbidden_to_allowed,T-013,fixed
+manuscript_original.tex,93,individual-chain prediction,ordinal population-level diagnostic output,forbidden_to_allowed,T-014,fixed
+manuscript_original.tex,94,strong explanatory fit proves,ordinal pattern stability observed,forbidden_to_allowed,T-014,fixed
+manuscript_original.tex,100,absolute entropy measure,ordinal verification-entropy index,forbidden_to_allowed,T-015,fixed
+manuscript_original.tex,103,true mechanism,protocol-defined failure patterns,forbidden_to_allowed,T-015,fixed
+manuscript_original.tex,103,failure mechanism recovery,protocol-defined failure-pattern differentiation,forbidden_to_allowed,T-016,fixed
+manuscript_original.tex,105,architecture-independent,within-protocol applicable,forbidden_to_allowed,T-016,fixed
+manuscript_original.tex,105,broad LLM reasoning,within-task-family ordinal patterns,forbidden_to_allowed,T-017,fixed
+manuscript_original.tex,105,universal evaluation instrument,within-protocol diagnostic protocol,forbidden_to_allowed,T-017,fixed
+sections/results.tex,15,R² values prove model validity,R² values indicate ordinal pattern stability,ambiguous_to_safe,T-018,verified
+sections/methodology.tex,22,explains 85% of the variance,ordinal pattern stability index of 0.42,overclaim_to_safe,T-019,verified
+sections/introduction.tex,8,failure mechanisms,protocol-defined failure patterns,ambiguous_to_safe,T-020,verified

@@ -1,0 +1,67 @@
+{
+  "manifest_version": "1.0",
+  "directory": "A6_claim_audit/input/",
+  "description": "Input files for claim audit and forbidden phrase review (A6)",
+  "files": [
+    {
+      "filename": "manuscript_original.tex",
+      "type": "manuscript",
+      "description": "Original manuscript draft containing forbidden phrases",
+      "required": true,
+      "contains_forbidden_phrases": true
+    },
+    {
+      "filename": "manuscript_revised_draft.tex",
+      "type": "manuscript",
+      "description": "Revised manuscript with forbidden phrases replaced",
+      "required": true,
+      "contains_forbidden_phrases": false
+    },
+    {
+      "filename": "sections/introduction.tex",
+      "type": "manuscript_section",
+      "description": "Introduction section",
+      "required": true
+    },
+    {
+      "filename": "sections/methodology.tex",
+      "type": "manuscript_section",
+      "description": "Methodology section",
+      "required": true
+    },
+    {
+      "filename": "sections/results.tex",
+      "type": "manuscript_section",
+      "description": "Results section",
+      "required": true
+    },
+    {
+      "filename": "appendices/math_derivations.tex",
+      "type": "manuscript_appendix",
+      "description": "Mathematical derivations appendix",
+      "required": true
+    },
+    {
+      "filename": "tables/checkpoint_breakdown.tex",
+      "type": "manuscript_table",
+      "description": "Checkpoint breakdown table",
+      "required": true
+    },
+    {
+      "filename": "claim_forbidden_phrases.txt",
+      "type": "constraint",
+      "description": "List of forbidden phrases in manuscript",
+      "required": true,
+      "phrase_count": 11
+    },
+    {
+      "filename": "claim_allowed_replacements.csv",
+      "type": "reference",
+      "description": "Allowed replacements for forbidden/risky phrases",
+      "required": true,
+      "rows": 18
+    }
+  ],
+  "generated_date": "2025-01-15",
+  "audit_version": "A6-1.0"
+}

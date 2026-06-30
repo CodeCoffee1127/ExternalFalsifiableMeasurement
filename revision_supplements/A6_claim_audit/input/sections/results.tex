@@ -1,0 +1,28 @@
+\section{Results}\label{sec:results}
+
+\subsection{Ordinal Verification-Entropy Scores}
+
+Table~\\ref{tab:detailed} presents detailed results for all five model families on the Spider development set.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+Model & Family & $H_v$ & $R^2$ & AIC & BIC & Pass Whiteness \\
+\midrule
+GPT-4 & GPT & 0.23 & 0.42 & 245.3 & 289.1 & Yes \\
+Claude-3 & Claude & 0.31 & 0.38 & 267.8 & 311.6 & Yes \\
+PaLM-2 & PaLM & 0.45 & 0.35 & 312.4 & 356.2 & Yes \\
+LLaMA-2 & LLaMA & 0.67 & 0.31 & 389.7 & 433.5 & Marginal \\
+CodeLLaMA & CodeLLaMA & 0.52 & 0.33 & 334.1 & 377.9 & Yes \\
+\bottomrule
+\end{tabular}
+\caption{Detailed results. $R^2$ values indicate ordinal pattern stability only.}
+\label{tab:detailed}
+\end{table}
+
+We do not claim that these results demonstrate general LLM reasoning validity. The findings are specific to the Spider text-to-SQL task and should not be generalized beyond tasks satisfying P1-P4.
+
+\subsection{Failure Pattern Analysis}
+
+The protocol-defined failure-pattern differentiation reveals five ordered error categories. These are protocol-defined constructs, not hidden causal mechanisms. The ordinal structure enables relative comparison within the protocol but does not support cardinal interpretation.

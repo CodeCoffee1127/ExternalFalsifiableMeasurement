@@ -1,0 +1,41 @@
+{
+  "directory": "B2_external_agreement/input",
+  "created_date": "2025-02-12",
+  "files": [
+    {
+      "filename": "annotation_codebook.md",
+      "source": "B0",
+      "description": "Frozen annotation codebook"
+    },
+    {
+      "filename": "blinded_sample_pool.csv",
+      "source": "B1",
+      "description": "Blinded sample pool"
+    },
+    {
+      "filename": "annotation_materials_manifest.csv",
+      "source": "B1",
+      "description": "Material paths"
+    },
+    {
+      "filename": "annotator_A_raw.csv",
+      "source": "annotation",
+      "description": "Annotator A raw annotations"
+    },
+    {
+      "filename": "annotator_B_raw.csv",
+      "source": "annotation",
+      "description": "Annotator B raw annotations"
+    },
+    {
+      "filename": "cpfc_labels_unblinded_after_annotation.csv",
+      "source": "unblinding",
+      "description": "CPFC labels unblinded post-annotation"
+    },
+    {
+      "filename": "adjudication_optional.csv",
+      "source": "adjudication",
+      "description": "Optional adjudication records"
+    }
+  ]
+}

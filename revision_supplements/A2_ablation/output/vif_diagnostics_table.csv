@@ -1,0 +1,11 @@
+predictor,vif_value,vif_threshold_warning,vif_threshold_severe,centered_or_standardized,model_context,action_required
+H_t,1.35,5.0,10.0,centered,M8,none
+delta_H,1.28,5.0,10.0,standardized,M8,none
+I_plus,1.15,5.0,10.0,log1p,M8,none
+I_minus,1.12,5.0,10.0,log1p,M8,none
+I_nec,1.08,5.0,10.0,centered,M8,none
+burst_flag,1.45,5.0,10.0,n/a (binary),M8,none
+gate_pass,1.22,5.0,10.0,n/a (binary),M8,none
+lag_A_t,1.85,5.0,10.0,centered,M8,none
+step_FE_t1,1.55,5.0,10.0,n/a (categorical),M8,none
+step_FE_t2,1.48,5.0,10.0,n/a (categorical),M8,none

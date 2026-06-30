@@ -1,0 +1,9 @@
+baseline_name,can_identify_endpoint,can_identify_onset,can_identify_pattern,is_forced_heuristic,reason
+endpoint_only,yes,no,no,no,Terminal observation only; no step-level mechanism
+endpoint_heuristic_all_t0,yes,no,no,yes,Forced assignment to t0 regardless of actual onset
+endpoint_heuristic_all_final,yes,no,no,yes,Forced assignment to final step regardless of actual onset
+endpoint_heuristic_majority_onset_train,yes,no,no,yes,Forced majority-class onset from training distribution
+endpoint_heuristic_uniform_random_seeded,yes,no,no,yes,Random onset assignment with fixed seed
+simple_step_level,yes,yes,yes,no,Independent per-step classification with pattern lookup
+descriptive_error_label,yes,no,yes,no,Maps error types to patterns but no temporal mechanism
+cpfc,yes,yes,yes,no,Full CPFC mechanism with pattern taxonomy

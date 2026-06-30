@@ -1,0 +1,4 @@
+model_source,n_cases,n_checkable_cases,endpoint_accuracy,gate_exclusion_rate,boundary_case_rate,mean_onset_rank,median_onset_rank,local_pattern_share,dependency_pattern_share,burst_pattern_share,boundary_pattern_share
+current_local,369,338,0.2647,0.0926,0.1031,1.438,1.0,0.4866,0.3165,0.1503,0.1093
+gpt4,369,337,0.249,0.0658,0.0816,1.422,1.0,0.4251,0.3001,0.1363,0.0841
+claude3,369,338,0.2657,0.0875,0.1103,1.456,1.0,0.4416,0.3203,0.1587,0.1123

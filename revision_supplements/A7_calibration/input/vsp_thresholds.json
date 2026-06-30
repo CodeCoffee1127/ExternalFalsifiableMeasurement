@@ -1,0 +1,34 @@
+{
+  "cardinal_threshold": {
+    "value": 0.02,
+    "description": "Maximum acceptable absolute bias for cardinal (probability scale) calibration",
+    "source": "manuscript_section_4.3",
+    "status": "FAILED at N=50 and N=200"
+  },
+  "rank_order_threshold": {
+    "value": 0.9,
+    "description": "Minimum acceptable Spearman rho for rank-order calibration",
+    "source": "manuscript_section_4.3",
+    "status": "PASSED at all tested N values"
+  },
+  "ordinal_boundary_threshold": {
+    "value": 0.85,
+    "description": "Minimum Kendall tau for ordinal boundary stability",
+    "source": "manuscript_section_4.3",
+    "status": "PASSED"
+  },
+  "required_N_for_cardinal": {
+    "value": ">200",
+    "description": "Required sample size to achieve cardinal threshold (estimated)",
+    "actual_N_tested": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      369
+    ],
+    "status": "Not achieved at any tested N <= 369"
+  },
+  "note": "Cardinal calibration requires |bias| < 0.02. At N=200, |bias|=0.328 >> 0.02. At N=369, |bias|~0.25 still >> 0.02."
+}

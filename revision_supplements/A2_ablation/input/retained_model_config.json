@@ -1,0 +1,93 @@
+{
+  "model_name": "M8",
+  "description": "Full retained model with all predictors",
+  "formula": "A_t ~ H_t + delta_H + I_plus + I_minus + I_nec + burst_flag + gate_pass + lag(A_t, 1) + step_FE",
+  "response_variable": "A_t",
+  "predictors": {
+    "H_t": {
+      "description": "Entropy at step t",
+      "range": [
+        0,
+        1
+      ],
+      "type": "continuous",
+      "constructed_from": "verification_state"
+    },
+    "delta_H": {
+      "description": "Change in entropy from t-1 to t",
+      "range": [
+        -1,
+        1
+      ],
+      "type": "continuous",
+      "constructed_from": "H_t - H_t_minus_1"
+    },
+    "I_plus": {
+      "description": "Positive information gain",
+      "range": [
+        0,
+        0.5
+      ],
+      "type": "continuous",
+      "constructed_from": "pattern_analysis"
+    },
+    "I_minus": {
+      "description": "Negative information (uncertainty increase)",
+      "range": [
+        0,
+        0.5
+      ],
+      "type": "continuous",
+      "constructed_from": "pattern_analysis"
+    },
+    "I_nec": {
+      "description": "Necessity information for onset",
+      "range": [
+        -0.5,
+        0.5
+      ],
+      "type": "continuous",
+      "constructed_from": "causal_necessity_computation"
+    },
+    "burst_flag": {
+      "description": "Whether degradation occurs in burst mode",
+      "type": "boolean",
+      "constructed_from": "temporal_clustering"
+    },
+    "gate_pass": {
+      "description": "Whether case passes quality gate",
+      "type": "boolean",
+      "constructed_from": "quality_filter"
+    },
+    "lag_A_t": {
+      "description": "Lagged A_t (t-1)",
+      "type": "continuous",
+      "constructed_from": "A_t at previous step"
+    },
+    "step_FE": {
+      "description": "Step fixed effects (t0, t1, t2)",
+      "type": "categorical",
+      "levels": [
+        "t0",
+        "t1",
+        "t2"
+      ],
+      "constructed_from": "step_position"
+    }
+  },
+  "estimation": {
+    "method": "OLS with clustered standard errors",
+    "cluster_variable": "case_id",
+    "transformations": {
+      "H_t": "centered",
+      "delta_H": "standardized",
+      "I_plus": "log1p",
+      "I_minus": "log1p",
+      "I_nec": "centered"
+    }
+  },
+  "free_parameters": 12,
+  "n_observations": 630,
+  "n_cases": 337,
+  "created_at": "2025-01-15 08:30:00"
+}

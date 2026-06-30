@@ -1,0 +1,17 @@
+N,projected_bias,projected_absolute_bias,bias_threshold,passes_cardinal_threshold,projected_spearman,projected_kendall_tau,extrapolation_confidence,notes
+50,0.5,0.5,0.02,False,0.8193,0.6515,interpolated,N=50: projected |bias|=0.5 > 0.02 threshold
+60,0.4564,0.4564,0.02,False,0.8251,0.6561,interpolated,N=60: projected |bias|=0.4564 > 0.02 threshold
+70,0.4226,0.4226,0.02,False,0.8303,0.6603,interpolated,N=70: projected |bias|=0.4226 > 0.02 threshold
+80,0.3953,0.3953,0.02,False,0.8351,0.6641,interpolated,N=80: projected |bias|=0.3953 > 0.02 threshold
+90,0.3727,0.3727,0.02,False,0.8393,0.6675,interpolated,N=90: projected |bias|=0.3727 > 0.02 threshold
+100,0.3536,0.3536,0.02,False,0.8432,0.6706,interpolated,N=100: projected |bias|=0.3536 > 0.02 threshold
+110,0.3371,0.3371,0.02,False,0.8467,0.6734,interpolated,N=110: projected |bias|=0.3371 > 0.02 threshold
+120,0.3227,0.3227,0.02,False,0.8499,0.6759,interpolated,N=120: projected |bias|=0.3227 > 0.02 threshold
+130,0.3101,0.3101,0.02,False,0.8527,0.6782,interpolated,N=130: projected |bias|=0.3101 > 0.02 threshold
+140,0.2988,0.2988,0.02,False,0.8553,0.6803,interpolated,N=140: projected |bias|=0.2988 > 0.02 threshold
+150,0.2887,0.2887,0.02,False,0.8577,0.6821,interpolated,N=150: projected |bias|=0.2887 > 0.02 threshold
+160,0.2795,0.2795,0.02,False,0.8598,0.6838,interpolated,N=160: projected |bias|=0.2795 > 0.02 threshold
+170,0.2712,0.2712,0.02,False,0.8617,0.6854,interpolated,N=170: projected |bias|=0.2712 > 0.02 threshold
+180,0.2635,0.2635,0.02,False,0.8635,0.6868,interpolated,N=180: projected |bias|=0.2635 > 0.02 threshold
+190,0.2565,0.2565,0.02,False,0.865,0.688,interpolated,N=190: projected |bias|=0.2565 > 0.02 threshold
+200,0.25,0.25,0.02,False,0.8665,0.6892,interpolated,N=200: projected |bias|=0.25 > 0.02 threshold

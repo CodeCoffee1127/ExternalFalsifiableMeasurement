@@ -1,0 +1,21 @@
+\begin{table}[ht]
+\centering
+\begin{tabular}{llcc}
+\toprule
+Checkpoint Type & Description & Ordinal Level & Frequency \\
+\midrule
+Keyword & SQL keyword correctness & 1 & 0.89 \\
+Table & Table name selection & 2 & 0.82 \\
+Join & JOIN condition match & 3 & 0.76 \\
+Predicate & WHERE clause correctness & 4 & 0.71 \\
+Aggregate & Aggregate function usage & 5 & 0.68 \\
+Column & Column selection accuracy & 6 & 0.65 \\
+Execution & Result set equivalence & 7 & 0.58 \\
+Schema & Schema linking & 8 & 0.45 \\
+Nesting & Subquery depth & 9 & 0.33 \\
+Syntax & SQL parser validity & 10 & 0.92 \\
+\bottomrule
+\end{tabular}
+\caption{Checkpoint types and their ordinal verification-entropy indices.}
+\label{tab:checkpoints}
+\end{table}

@@ -1,0 +1,164 @@
+# Diagnostic Decision Rules for CPFC Protocol State Machine
+# Version: A8-1.0
+
+# --- Calibration State Rules ---
+calibration_state_rules:
+  rule_id: CSR-001
+  name: calibration_bias_threshold
+  description: >
+    If calibration bias (mean predicted probability vs. observed frequency)
+    exceeds the threshold of 0.15 in cardinal units, reject cardinal
+    interpretation and transition to ordinal-only mode.
+  threshold: 0.15
+  condition: calibration_bias > threshold
+  action: reject_cardinal_accept_ordinal
+  target_state: cardinal_rejected_ordinal_only
+
+# --- Residual Whiteness Rules ---
+residual_whiteness_rules:
+  rule_id: RWR-001
+  name: ljung_box_test
+  description: >
+    Apply Ljung-Box test to model residuals at lag 10. If p > 0.05,
+    residuals are considered white (uncorrelated) and model passes
+    whiteness check.
+  test: Ljung-Box
+  lag: 10
+  significance_level: 0.05
+  pass_condition: p_value > 0.05
+
+  rule_id: RWR-002
+  name: portmanteau_fallback
+  description: >
+    If Ljung-Box is inconclusive (0.01 < p <= 0.05), apply
+    Portmanteau test as secondary check.
+  test: Portmanteau
+  significance_level: 0.05
+  pass_condition: p_value > 0.05
+
+# --- Model Identifiability Rules ---
+model_identifiability_rules:
+  rule_id: MIR-001
+  name: aic_bic_dominance
+  description: >
+    Compare candidate models using AIC and BIC. A model is dominated
+    if another model has both lower AIC and lower BIC.
+  criteria: [AIC, BIC]
+  dominance_condition: both_AIC_and_BIC_lower
+
+  rule_id: MIR-002
+  name: residual_whiteness_required
+  description: >
+    A model is only admissible if it passes residual whiteness (RWR-001).
+    Non-white residuals indicate model misspecification.
+  prerequisite: RWR-001 pass
+  fail_action: reject_model
+
+# --- External Annotation Rules ---
+external_annotation_rules:
+  rule_id: EAR-001
+  name: cohen_kappa_threshold
+  description: >
+    External annotator agreement measured by Cohen's kappa.
+    kappa >= 0.60: supported
+    0.40 <= kappa < 0.60: partial
+    kappa < 0.40: not supported
+  thresholds:
+    supported: 0.60
+    partial: 0.40
+    not_supported: 0.0
+
+# --- Scope Boundary Rules ---
+scope_boundary_rules:
+  rule_id: SBR-001
+  name: nesting_depth_limit
+  description: >
+    If task requires more than 3 levels of nested subqueries, or
+    involves unverifiable schema elements, mark as scope boundary.
+  max_nesting_depth: 3
+  condition: nesting_depth > max_nesting_depth OR unverifiable_elements
+  action: mark_scope_boundary
+
+  rule_id: SBR-002
+  name: unverifiable_gate
+  description: >
+    If any checkpoint type fails post-hoc availability (P4 violation),
+    the entire instance is unverifiable and excluded.
+  condition: P4_violation_detected
+  action: exclude_unverifiable
+
+# --- Termination Conditions ---
+termination_conditions:
+  - condition: all_states_resolved
+    description: All diagnostic states have been determined
+    action: generate_final_protocol_state
+
+  - condition: calibration_rejected
+    description: Cardinal interpretation rejected; ordinal only
+    action: restrict_claims_to_ordinal
+
+  - condition: model_non_identifiable
+    description: No admissible model found
+    action: terminate_with_fallback
+
+  - condition: scope_boundary_reached
+    description: Task exceeds protocol scope
+    action: exclude_and_report
+
+  - condition: external_agreement_not_supported
+    description: External annotators do not support protocol claims
+    action: downgrade_claims_to_exploratory
+
+# --- Allowed Outputs by State ---
+allowed_outputs_by_state:
+  cardinal_rejected_ordinal_only:
+    allowed_claims:
+      - ordinal population-level protocol-defined diagnostic output
+      - within-protocol ordinal pattern stability
+    forbidden_claims:
+      - cardinal probability statements
+      - absolute uncertainty quantification
+      - cross-domain generalization
+
+  retained_model_admissible:
+    allowed_claims:
+      - ordinal population-level protocol-defined diagnostic output
+      - within-protocol model comparison
+      - residual whiteness confirmed
+    forbidden_claims:
+      - individual instance prediction
+      - causal mechanism identification
+      - architecture-independent generalization
+
+  non_identifiable:
+    allowed_claims:
+      - no admissible model identified
+      - ordinal descriptive statistics only
+    forbidden_claims:
+      - any model-based inference
+      - population-level generalization
+
+  scope_boundary:
+    allowed_claims:
+      - excluded from analysis
+      - scope boundary noted
+    forbidden_claims:
+      - any inference about excluded instances
+
+  external_agreement_not_supported:
+    allowed_claims:
+      - exploratory observation only
+      - no external validation claim
+    forbidden_claims:
+      - validated diagnostic claim
+      - externally confirmed pattern
+
+# --- Forbidden Claims by State ---
+forbidden_claims_by_state:
+  all_states:
+    universally_forbidden:
+      - architecture-independent generalization
+      - universal evaluation instrument claim
+      - individual-chain prediction
+      - hidden causal mechanism identification
+      - broad LLM reasoning validity

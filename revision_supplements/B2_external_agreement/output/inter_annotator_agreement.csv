@@ -1,0 +1,5 @@
+label_type,n_cases,exact_agreement,cohens_kappa,weighted_kappa,macro_f1_between_annotators,ordinary_cases_only_flag,boundary_cases_included_flag,notes
+onset,100,0.77,0.69,0.83,N/A,False,True,All 100 cases including boundary
+onset,60,0.83,0.75,0.88,N/A,True,False,Ordinary cases only
+pattern,100,0.72,0.65,0.67,0.71,False,True,All 100 cases including boundary
+pattern,60,0.77,0.71,0.71,0.75,True,False,Ordinary cases only

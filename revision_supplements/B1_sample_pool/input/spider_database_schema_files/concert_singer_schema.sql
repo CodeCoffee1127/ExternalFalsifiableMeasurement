@@ -1,0 +1,2 @@
+-- Schema for concert_singer
+-- Placeholder SQL file

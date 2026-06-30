@@ -1,0 +1,12 @@
+class_type,class_label,count,share,cumulative_share,ordinary_or_boundary
+onset,t0,31,0.31,0.31,ordinary
+onset,t1,25,0.25,0.56,ordinary
+onset,t2,19,0.19,0.75,ordinary
+onset,none/uncertain,19,0.19,0.94,boundary_mixed
+onset,TOTAL,100,1.0,1.0,
+pattern,local_verification_collapse,25,0.25,0.25,ordinary
+pattern,dependency_mediated_propagation,25,0.25,0.5,ordinary
+pattern,burst_associated_degradation,14,0.14,0.64,ordinary
+pattern,boundary_case,18,0.18,0.82,boundary
+pattern,unverifiable_or_excluded,18,0.18,1.0,boundary
+pattern,TOTAL,100,1.0,1.0,

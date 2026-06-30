@@ -1,0 +1,35 @@
+{
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "top_k": null,
+  "max_tokens": 4096,
+  "num_return_sequences": 1,
+  "do_sample": false,
+  "repetition_penalty": 1.0,
+  "presence_penalty": 0.0,
+  "frequency_penalty": 0.0,
+  "stop_sequences": [
+    ";",
+    "\n\n"
+  ],
+  "pad_token_id": null,
+  "eos_token_id": null,
+  "description": "Deterministic decoding for reproducible SQL generation. temperature=0.0 ensures greedy decoding.",
+  "applies_to_all_models": true,
+  "current_local": {
+    "backend": "vLLM",
+    "gpu_memory_utilization": 0.9,
+    "tensor_parallel_size": 1,
+    "dtype": "auto"
+  },
+  "gpt4": {
+    "backend": "openai_api",
+    "response_format": {
+      "type": "text"
+    }
+  },
+  "claude3": {
+    "backend": "anthropic_api",
+    "thinking": null
+  }
+}

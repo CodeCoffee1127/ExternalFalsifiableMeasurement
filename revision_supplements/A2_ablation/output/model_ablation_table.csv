@@ -1,0 +1,10 @@
+model_name,included_terms,observations,free_parameters,residual_df,R2,adjusted_R2,RMSE,AIC,BIC,delta_AIC_vs_M8,delta_BIC_vs_M8,Ljung_Box_p,passes_whiteness,dominated_by_simpler,interpretation_note
+M0,intercept,630,1,629,0.0,0.0,0.285,-320,-312,530,478,0.001,False,False,Null baseline; no explanatory power
+M1,step_FE,630,3,627,0.82,0.819,0.15,-620,-580,230,210,0.012,False,False,Step position matters but misses process dynamics
+M2,lag,630,2,628,0.71,0.709,0.19,-510,-470,340,320,0.008,False,False,Autocorrelation alone insufficient
+M3,A_only,630,2,628,0.65,0.649,0.21,-450,-410,400,380,0.015,False,False,Activity measure captures some signal
+M4,I_nec_only,630,2,628,0.58,0.579,0.23,-380,-340,470,450,0.022,False,False,Information-theoretic terms contribute independently
+M5,A+I_nec,630,3,627,0.78,0.779,0.165,-580,-540,270,250,0.018,False,False,Core predictors without step FE
+M6,step_FE+lag,630,4,626,0.89,0.889,0.12,-690,-650,160,140,0.095,False,False,Step FE plus lag improves fit
+M7,step_FE+A+I_nec,630,5,625,0.92,0.919,0.105,-720,-680,130,110,0.185,False,False,Full model minus lag
+M8,full,630,6,624,0.945,0.944,0.08,-850,-790,0,0,0.258,True,False,"Retained model: best AIC/BIC, passes all diagnostics"

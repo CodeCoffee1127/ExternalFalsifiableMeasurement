@@ -1,0 +1,4 @@
+split,model_source,n_cases,n_total_checkpoints,n_checkable_checkpoints,n_unverifiable_checkpoints,checkable_rate,unverifiable_rate,main_unverifiable_reason
+dtest,current_local,369,1109,660,449,0.5951,0.4049,format_error
+dtest,gpt4,369,1089,619,470,0.5684,0.4316,timeout
+dtest,claude3,369,1127,665,462,0.5901,0.4099,unverifiable_predicate

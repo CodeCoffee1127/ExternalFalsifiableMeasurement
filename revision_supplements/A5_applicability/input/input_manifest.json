@@ -1,0 +1,41 @@
+{
+  "manifest_version": "1.0",
+  "directory": "A5_applicability/input/",
+  "description": "Input files for CPFC protocol applicability analysis to Spider task",
+  "files": [
+    {
+      "filename": "cpfc_protocol_definition.md",
+      "type": "documentation",
+      "description": "Full definition of CPFC protocol with P1-P4 conditions",
+      "required": true
+    },
+    {
+      "filename": "spider_task_mapping.csv",
+      "type": "data",
+      "description": "Spider task components mapped to P1-P4 conditions",
+      "required": true,
+      "rows": 10
+    },
+    {
+      "filename": "candidate_domain_notes.md",
+      "type": "documentation",
+      "description": "Notes on candidate future domains (not empirically validated)",
+      "required": true
+    },
+    {
+      "filename": "checkpoint_schema_definition.json",
+      "type": "schema",
+      "description": "JSON schema for checkpoint outcome recording",
+      "required": true
+    },
+    {
+      "filename": "verifier_rule_inventory.csv",
+      "type": "data",
+      "description": "Complete inventory of verifier rules for Spider",
+      "required": true,
+      "rows": 12
+    }
+  ],
+  "generated_date": "2025-01-15",
+  "protocol_version": "CPFC-1.0"
+}

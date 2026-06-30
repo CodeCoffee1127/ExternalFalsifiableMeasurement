@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CPFC Checkpoint Schema",
+  "description": "Schema definition for checkpoint-level outcome recording in CPFC protocol",
+  "type": "object",
+  "required": [
+    "checkpoint_id",
+    "task_id",
+    "model_id",
+    "checkpoint_type",
+    "outcome",
+    "verifier_source"
+  ],
+  "properties": {
+    "checkpoint_id": {
+      "type": "string",
+      "description": "Unique identifier for this checkpoint instance"
+    },
+    "task_id": {
+      "type": "string",
+      "description": "Identifier for the task/problem being evaluated"
+    },
+    "model_id": {
+      "type": "string",
+      "description": "Identifier for the model generating the solution"
+    },
+    "checkpoint_type": {
+      "type": "string",
+      "enum": [
+        "keyword",
+        "table_selection",
+        "join_condition",
+        "where_predicate",
+        "aggregate_function",
+        "column_selection",
+        "execution_equivalence",
+        "schema_linking",
+        "nesting_depth",
+        "syntax_validity"
+      ],
+      "description": "Category of checkpoint being verified"
+    },
+    "outcome": {
+      "type": "string",
+      "enum": [
+        "correct",
+        "minor_error",
+        "major_error",
+        "omission",
+        "structural_error"
+      ],
+      "description": "Ordered categorical outcome of checkpoint verification"
+    },
+    "verifier_source": {
+      "type": "string",
+      "description": "Source of the verification rule applied"
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Optional verifier confidence score"
+    }
+  }
+}

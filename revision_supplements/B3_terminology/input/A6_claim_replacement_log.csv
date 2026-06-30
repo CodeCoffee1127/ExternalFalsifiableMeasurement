@@ -1,0 +1,8 @@
+original_claim,replacement,reason,section
+absolute uncertainty quantification,ordinal diagnostic resolution,avoid cardinal claims,methods
+true failure mechanism,protocol-defined failure-pattern differentiation,avoid truth claims,results
+hidden causal mechanism,post-hoc diagnostic protocol,avoid causal language,methods
+external ground truth,independent blinded annotation reference,avoid ground truth claims,evaluation
+individual prediction,population-level diagnostic summary,avoid individual claims,results
+mechanism recovery,pattern characterization,avoid recovery claims,results
+universal evaluation,within-task-family assessment,avoid universality,discussion

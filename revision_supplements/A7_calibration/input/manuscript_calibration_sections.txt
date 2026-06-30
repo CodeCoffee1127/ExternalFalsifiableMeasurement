@@ -1,0 +1,18 @@
+=== Manuscript Calibration Sections - Raw Excerpts ===
+
+[Section 4.3.1 - Cardinal Calibration]
+"We evaluated cardinal calibration by comparing model-predicted probabilities against observed binary outcomes. At N=50 (gold set), the absolute bias was 0.5000, far exceeding the predetermined threshold of 0.02. At N=200 (validation set), the absolute bias was 0.328, still well above the 0.02 threshold."
+
+[Section 4.3.2 - Rank Order Calibration]
+"Rank order calibration was assessed via Spearman correlation between predicted and observed ranks. At N=200, Spearman rho = 0.882, well above the 0.90 threshold---wait, this requires correction. The actual value was rho = 0.882, which falls slightly below the 0.90 threshold. However, differential validity testing with 50% bias injection yielded rho = 0.9636, maintaining rank order above threshold."
+
+[Section 4.3.3 - Required Sample Size]
+"Based on the observed bias decay rate (|bias| ~ 1/sqrt(N)), we estimate that achieving the cardinal threshold of |bias| < 0.02 would require N > 200 cases. At the maximum tested N=369, |bias| ~ 0.25 still exceeded the threshold."
+
+[Section 4.3.4 - Differential Validity]
+"To test robustness against annotation bias, we injected 0%, 10%, 20%, 30%, 40%, and 50% bias into the gold standard rankings. At 50% bias injection, Spearman rho = 0.9636, comfortably above the 0.90 rank order threshold, confirming that the VSP ranking maintains validity even under substantial bias."
+
+[Section 4.3.5 - Ordinal Boundary]
+"The ordinal-only boundary (relaxing cardinal calibration requirements) was evaluated using Kendall tau. All splits showed tau > 0.71, confirming stable ordinal ranking even without cardinal calibration."
+
+=== END EXCERPTS ===

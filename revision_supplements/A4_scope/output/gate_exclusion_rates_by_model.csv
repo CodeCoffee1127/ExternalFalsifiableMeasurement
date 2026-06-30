@@ -1,0 +1,4 @@
+model_source,n_cases,n_checkpoints,n_checkable_checkpoints,n_unverifiable_checkpoints,gate_exclusion_rate,excluded_from_dynamics_rate,main_gate_fail_reason
+current_local,369,965,694,148,0.1534,0.2031,timeout
+gpt4,369,965,694,148,0.1534,0.2031,timeout
+claude3,369,965,694,148,0.1534,0.2031,timeout

@@ -1,0 +1,2 @@
+model_name,calibration_state,identifiability_state,residual_whiteness_state,external_annotation_state,scope_boundary_state,final_protocol_state,allowed_claim_level
+M8_full_retained,cardinal_rejected_ordinal_only,retained_model_admissible,pass,supported,within_boundary,retained_model_admissible + ordinal_only,ordinal population-level protocol-defined diagnostic output

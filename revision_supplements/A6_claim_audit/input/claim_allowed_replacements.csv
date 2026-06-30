@@ -1,0 +1,19 @@
+forbidden_or_risky_phrase,allowed_replacement,scope_condition,target_sections,notes
+absolute entropy,ordinal verification-entropy index,always,all,Ordinal interpretation only; no cardinal claims
+cardinal uncertainty,ordinal verification-entropy index,always,all,"Entropy is ordinal diagnostic, not cardinal measure"
+true mechanism,protocol-defined failure pattern,always,all,Cannot claim to reveal true causal mechanisms
+hidden causal mechanism,protocol-defined failure pattern,always,all,"Failure patterns are protocol-defined, not discovered causal structures"
+failure mechanism recovery,protocol-defined failure-pattern differentiation,always,all,"Differentiation within protocol, not recovery of underlying mechanisms"
+broad LLM reasoning,within-task-family ordinal pattern,always,all,Scope limited to tasks satisfying P1-P4
+general LLM reasoning validity,within-task-family ordinal pattern stability,always,all,No claims about general reasoning validity
+universal evaluation instrument,within-protocol diagnostic protocol,always,all,"Protocol-constrained, not universal"
+architecture-independent,within-protocol applicable,always,all,"Applicability depends on protocol, not architecture"
+individual-chain prediction,ordinal population-level protocol-defined diagnostic output,always,all,"Population-level ordinal, not individual prediction"
+strong explanatory fit proves,ordinal pattern stability observed,always,all,No proof claims; observational language only
+mechanism differentiation,protocol-defined failure-pattern differentiation,always,all,Pattern differentiation within protocol bounds
+uncertainty measurement,ordinal verification-entropy index,always,all,"Index, not measurement; ordinal, not cardinal"
+evaluation instrument,within-protocol diagnostic protocol,when claiming generality,"abstract, introduction, contributions",Only applicable where P1-P4 are satisfied
+cross-model generalization,within-task-family ordinal pattern stability,always,"results, discussion","Stability within task family, not cross-model generalization"
+R² proves,R² indicates,R² > 0 context,results,"Indicator language, never proof language"
+explains X% of variance,ordinal pattern stability index of X,R² reporting,"results, tables",R² is not variance explained in ordinal context
+model validity,model admissibility within protocol,always,all,"Admissibility, not validity"

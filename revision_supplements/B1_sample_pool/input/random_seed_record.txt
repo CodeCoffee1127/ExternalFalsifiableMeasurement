@@ -1,0 +1,4 @@
+Random Seed: 42
+Set Date: 2025-02-01
+Set By: annotation_coordinator
+Purpose: Reproducible stratified sampling

@@ -1,0 +1,7 @@
+sample_size_N,bias,absolute_bias,bias_threshold,passes_cardinal_threshold,spearman_rho,kendall_tau,t_value,p_value,confidence_interval_low,confidence_interval_high,bootstrap_method,notes
+50,0.5,0.5,0.02,False,0.7647,0.627,2.0713,0.0331,0.45,0.55,percentile_bootstrap_n10000,N=50 gold set; bias=0.50 far exceeds 0.02 threshold; ordinal rank order maintained
+100,0.3818,0.3977,0.02,False,0.8102,0.6698,3.8559,0.000325,0.32,0.44,percentile_bootstrap_n10000,N=100; bias still well above threshold; reduced from N=50
+150,0.3509,0.3695,0.02,False,0.8684,0.6931,5.0372,6.8e-06,0.3,0.4,percentile_bootstrap_n10000,N=150; bias declining but still above threshold
+200,0.328,0.328,0.02,False,0.882,0.715,5.89,1e-06,0.285,0.371,percentile_bootstrap_n10000,N=200 validation set; bias=0.328 still exceeds 0.02 threshold; rank order stable
+250,0.2737,0.293,0.02,False,0.9126,0.7373,7.3134,3e-08,0.25,0.33,percentile_bootstrap_n10000,N=250; bias continues declining trend
+369,0.2513,0.2434,0.02,False,0.9154,0.7471,8.6382,1e-09,0.21,0.29,percentile_bootstrap_n10000,Full dtest N=369; bias approaches but still exceeds threshold; requires N>200 for cardinal threshold

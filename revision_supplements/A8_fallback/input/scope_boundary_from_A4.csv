@@ -1,0 +1,6 @@
+analysis_id,task_instance_id,max_nesting_depth,unverifiable_elements,scope_boundary_state,decision,notes
+A4-001,spider_dev_001,2,False,within_boundary,include,Within protocol scope
+A4-002,spider_dev_042,4,True,scope_boundary,exclude,Exceeds max nesting depth; unverifiable elements present
+A4-003,spider_dev_103,1,False,within_boundary,include,Within protocol scope
+A4-004,spider_dev_158,3,False,within_boundary,include,At boundary limit but within scope
+A4-005,spider_dev_201,5,True,scope_boundary,exclude,Deep nesting with unverifiable schema references

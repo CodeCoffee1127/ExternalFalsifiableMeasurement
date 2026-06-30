@@ -1,0 +1,6 @@
+condition,allowed_wording,forbidden_wording,manuscript_sections
+calibration failure,ordinal diagnostic quantity / rank-order diagnostic indicator / relative diagnostic resolution,absolute uncertainty / cardinal entropy value / physical uncertainty measurement,"Methods, Results"
+residual whiteness pass,population-level ordinal summary / aggregate diagnostic trend / sample-level pattern,individual-chain prediction / per-case diagnosis / case-level forecast,"Results, Discussion"
+R2 reported,fit summary / model behavior summary / variance explained in sample,diagnostic power / mechanism recovery / predictive validity / generalization capacity,"Results, Discussion"
+entropy score referenced,ordinal information measure / relative entropy ranking / diagnostic rank indicator,absolute information content / precise uncertainty quantification / Shannon entropy value,"Methods, Results"
+step onset referenced,first degradation step / earliest observable degradation / ordinal onset position,true failure point / exact failure moment / causal trigger point,"Methods, Results, Discussion"

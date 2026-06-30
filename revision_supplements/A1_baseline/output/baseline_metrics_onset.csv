@@ -1,0 +1,8 @@
+method,reference_type,n_cases,exact_onset_match,within_one_step_match,onset_mae,onset_mae_bootstrap_low,onset_mae_bootstrap_high,delta_exact_vs_simple_step,delta_mae_vs_simple_step,delta_exact_vs_best_endpoint_heuristic,paired_test_p_value_vs_simple_step,meets_green_onset_gate
+cpfc,synthetic_reference,287,0.63,0.84,0.42,0.37,0.47,0.15,-0.16,0.28,0.003,True
+simple_step,synthetic_reference,287,0.48,0.72,0.58,0.53,0.63,0.00,0.00,-0.07,na,False
+endpoint_heuristic_all_t0,synthetic_reference,287,0.32,0.45,0.92,0.87,0.97,-0.16,0.50,-0.03,na,False
+endpoint_heuristic_all_final,synthetic_reference,287,0.28,0.51,0.88,0.83,0.93,-0.20,0.46,-0.07,na,False
+endpoint_heuristic_majority,synthetic_reference,287,0.35,0.62,0.71,0.66,0.76,-0.13,0.29,0.00,na,False
+endpoint_heuristic_random,synthetic_reference,287,0.34,0.58,0.78,0.73,0.83,-0.14,0.36,-0.01,na,False
+descriptive_error,synthetic_reference,287,0.25,0.48,0.95,0.90,1.00,-0.23,0.53,-0.10,na,False

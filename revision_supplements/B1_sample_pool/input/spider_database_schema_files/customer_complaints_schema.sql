@@ -1,0 +1,2 @@
+-- Schema for customer_complaints
+-- Placeholder SQL file

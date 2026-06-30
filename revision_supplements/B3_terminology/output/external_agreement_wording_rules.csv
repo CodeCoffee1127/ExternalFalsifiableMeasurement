@@ -1,0 +1,6 @@
+metric_condition,allowed_wording,forbidden_wording,required_caveat
+kappa >= 0.60 AND CPFC_kappa >= 0.60,statistically meaningful external agreement,external ground truth / true labels / validated against ground truth,"Annotation-based reference labels, not ground truth; agreement is statistical, not absolute"
+0.40 <= kappa < 0.60,partial external agreement / moderate inter-annotator agreement,strong external validation / robust agreement / confirmed by annotators,Moderate agreement only; interpretations should be limited and qualified
+kappa < 0.40,provisional labels pending further validation / insufficient agreement for validation,Any external agreement claim / validated / confirmed / corroborated,Agreement below acceptable threshold; labels should not be used for validation claims
+exact_agreement >= 0.60 AND within_one_step >= 0.80,substantial onset localization agreement / clinically meaningful step agreement,perfect onset identification / exact step recovery,Within-one-step agreement acknowledges ordinal uncertainty
+MAE <= 0.50,mean error within half a step / acceptable ordinal accuracy,precise onset identification / exact onset recovery,MAE reflects average error; individual cases may have larger deviations

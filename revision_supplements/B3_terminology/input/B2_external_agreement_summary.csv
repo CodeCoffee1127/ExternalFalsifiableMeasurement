@@ -1,0 +1,9 @@
+metric,value,target,status
+inter_annotator_onset_kappa,0.69,0.6,PASS
+inter_annotator_pattern_kappa,0.65,0.6,PASS
+cpfc_exact_onset,0.74,0.6,PASS
+cpfc_within_one_step,0.99,0.8,PASS
+cpfc_onset_mae,0.27,0.5,PASS
+cpfc_onset_kappa,0.65,0.6,PASS
+cpfc_pattern_kappa,0.67,0.6,PASS
+cpfc_pattern_macro_f1,0.74,0.6,PASS

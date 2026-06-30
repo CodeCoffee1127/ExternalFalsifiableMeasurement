@@ -1,0 +1,16 @@
+environment_item,file_path,exists,exact_versions,contains_ambiguous_version_spec,action_required,notes
+Python version,system_environment_record.md,True,3.10.12,False,none,Exact version pinned in conda env
+PyTorch,requirements_freeze.txt,True,2.1.2+cu121,False,none,Exact version with CUDA suffix
+Transformers,requirements_freeze.txt,True,4.36.2,False,none,Exact version pinned
+CUDA toolkit,conda_env_export.yaml,True,12.1.0,False,none,Exact build string present
+NVIDIA driver,system_environment_record.md,True,535.104.05,False,none,Exact driver version recorded
+vLLM,requirements_freeze.txt,True,0.2.7,False,none,Exact version pinned
+OpenAI API client,requirements_freeze.txt,True,1.12.0,False,none,Exact version pinned
+Anthropic API client,requirements_freeze.txt,True,0.21.0,False,none,Exact version pinned
+Conda environment,conda_env_export.yaml,True,Full export,False,none,Complete conda export available
+Docker image,system_environment_record.md,True,spider-repro:v1.0,False,none,Tagged Docker image recorded
+Git commit,commit_hash_record.txt,True,8f3a2b1c,False,none,Full SHA recorded
+Random seed config,random_seed_config.json,True,Multiple seeds=42,False,none,All seeds explicitly set
+StepExtractor,step_extractor_version.txt,True,v2.3.1,False,none,Version explicitly recorded
+Rule set,rule_set_version.txt,True,v3.2.0,False,none,Version explicitly recorded
+Protocol freeze,protocol_freeze_record.md,True,v3.2.0-final,False,none,Freeze timestamp recorded

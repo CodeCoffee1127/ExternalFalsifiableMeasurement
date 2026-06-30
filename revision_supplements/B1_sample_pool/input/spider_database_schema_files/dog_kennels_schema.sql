@@ -1,0 +1,2 @@
+-- Schema for dog_kennels
+-- Placeholder SQL file

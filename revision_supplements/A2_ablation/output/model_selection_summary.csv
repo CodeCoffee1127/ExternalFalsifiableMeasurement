@@ -1,0 +1,6 @@
+criterion,best_model,best_value,second_best,second_best_value,delta_best_vs_second,recommended_model,rationale
+AIC,M8,-850.3,M7,-820.1,30.2,M8,Lowest AIC; all added terms improve information criterion
+BIC,M8,-790.1,M7,-760.9,29.2,M8,Lowest BIC; complexity penalty justified by fit improvement
+adjusted_R2,M8,0.944,M7,0.928,0.016,M8,Highest adjusted R2 with penalty for extra parameters
+residual_whiteness,M5/M6/M7/M8,0.258,M5,0.13,0.128,M8,All models M5+ pass Ljung-Box test (p > 0.05)
+no_dominance,M8,1.0,M7,1.0,0.0,M8,No simpler model dominates M8 on all criteria simultaneously

@@ -1,0 +1,31 @@
+{
+  "directory": "B0_codebook/input",
+  "created_date": "2025-01-15",
+  "files": [
+    {
+      "filename": "cpfc_label_definitions_from_A1.csv",
+      "source": "A1",
+      "description": "Label definitions from A1 output"
+    },
+    {
+      "filename": "sample_checkpoint_examples.csv",
+      "source": "internal",
+      "description": "Example checkpoints"
+    },
+    {
+      "filename": "boundary_case_examples.csv",
+      "source": "internal",
+      "description": "Boundary examples"
+    },
+    {
+      "filename": "spider_schema_context_examples/",
+      "source": "Spider",
+      "description": "Schema context examples"
+    },
+    {
+      "filename": "annotation_pilot_cases.csv",
+      "source": "internal",
+      "description": "Pilot cases"
+    }
+  ]
+}

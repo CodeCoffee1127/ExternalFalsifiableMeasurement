@@ -1,0 +1,2 @@
+-- Schema for flight_2
+-- Placeholder SQL file

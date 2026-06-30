@@ -1,0 +1,2 @@
+-- Schema file for course_teach (placeholder)
+-- Contains CREATE TABLE statements

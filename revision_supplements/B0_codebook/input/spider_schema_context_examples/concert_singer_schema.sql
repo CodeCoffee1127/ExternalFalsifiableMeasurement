@@ -1,0 +1,2 @@
+-- Schema file for concert_singer (placeholder)
+-- Contains CREATE TABLE statements

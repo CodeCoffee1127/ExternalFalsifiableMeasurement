@@ -1,0 +1,6 @@
+pattern_label,count,share,ordinary_or_boundary
+local_verification_collapse,83,0.38,ordinary
+dependency_mediated_propagation,72,0.33,ordinary
+burst_associated_degradation,38,0.18,ordinary
+boundary_case,14,0.06,boundary
+unverifiable_or_excluded,10,0.05,boundary

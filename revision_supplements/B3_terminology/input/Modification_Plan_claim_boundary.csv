@@ -1,0 +1,8 @@
+claim_id,claim_text,boundary_type,evidence_required,status
+C1,CPFC provides first-degradation-step localization,ordinal_diagnostic,external_agreement,supported
+C2,CPFC differentiates failure patterns into distinct categories,pattern_differentiation,inter_annotator_kappa,supported
+C3,External annotation validates CPFC labels,external_validation,kappa_threshold,supported
+C4,Within-task-family ordinal pattern stability,stability,R2_score,supported
+C5,Checkpoints are externally checkable,checkability,verification_log,supported
+C6,Protocol is post-hoc diagnostic,methodology,protocol_document,supported
+C7,Results are population-level summary,scope,sample_statistics,supported

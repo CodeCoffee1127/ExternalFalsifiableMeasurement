@@ -1,0 +1,2 @@
+-- Schema for soccer_1
+-- Placeholder SQL file

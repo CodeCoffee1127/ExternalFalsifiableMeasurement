@@ -1,0 +1,8 @@
+phrase,location,risk_type,concern,mitigation,risk_level,recommended_action
+model performance,sections/results.tex:18,ambiguous,Could imply general performance claim beyond protocol scope,Ensure context specifies 'within-protocol ordinal diagnostic',low,add_scope_qualifier
+error pattern,sections/results.tex:22,ambiguous,Could be read as discovered causal pattern,Verify always paired with 'protocol-defined',low,add_prefix_protocol_defined
+verification accuracy,sections/methodology.tex:15,ambiguous,Could imply ground-truth accuracy rather than protocol fidelity,Replace with 'verification protocol fidelity',medium,replace_phrase
+cross-model comparison,sections/results.tex:8,ambiguous,Could imply generalizable cross-model claims,Add 'within Spider task family' qualifier,medium,add_qualifier
+diagnostic power,sections/methodology.tex:28,overclaim,Could imply statistical power in general sense,Replace with 'ordinal discriminability within protocol',medium,replace_phrase
+predictive validity,appendices/math_derivations.tex:12,overclaim,Could imply psychometric validity claims,Replace with 'within-protocol ordinal consistency',medium,replace_phrase
+model understanding,sections/introduction.tex:10,ambiguous,Could imply access to model internals or interpretability,Replace with 'model behavior characterization within protocol',low,replace_phrase

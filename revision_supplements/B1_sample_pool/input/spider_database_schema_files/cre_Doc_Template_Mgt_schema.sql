@@ -1,0 +1,2 @@
+-- Schema for cre_Doc_Template_Mgt
+-- Placeholder SQL file

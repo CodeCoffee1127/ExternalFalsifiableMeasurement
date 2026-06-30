@@ -1,0 +1,2 @@
+-- Schema file for soccer_1 (placeholder)
+-- Contains CREATE TABLE statements

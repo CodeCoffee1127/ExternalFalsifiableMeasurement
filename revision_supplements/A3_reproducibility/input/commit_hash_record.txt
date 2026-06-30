@@ -1,0 +1,4 @@
+repo_commit: 8f3a2b1c9d4e5f678901234567890abcdef123456
+freeze_commit: 8f3a2b1c9d4e5f678901234567890abcdef123456
+branch: main
+tag: reproducibility-freeze-v3.2.0

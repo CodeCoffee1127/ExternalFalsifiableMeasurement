@@ -1,0 +1,9 @@
+check_item,location,found_text,risk_level,resolution_status,replacement,reviewer_note
+Contribution 1: cardinal uncertainty measure,"Contributions, item 1",cardinal uncertainty measure,CRITICAL,fixed,ordinal diagnostic index,Replaced with ordinal formulation
+Contribution 2: universal evaluation instrument,"Contributions, item 2",universal evaluation instrument,CRITICAL,fixed,within-protocol diagnostic,Scope constrained to protocol
+Contribution 3: architecture-independent,"Contributions, item 3",architecture-independent,CRITICAL,fixed,within-protocol applicable,Architecture claim removed
+Contribution 3: general LLM reasoning validity,"Contributions, item 3",general LLM reasoning validity,CRITICAL,fixed,within-task-family ordinal pattern stability,Generalization claim removed
+Contribution 4: individual-chain prediction,"Contributions, item 4",individual-chain prediction,CRITICAL,fixed,ordinal population-level diagnostic output,Population-level specified
+Contribution 5: strong explanatory fit proves,"Contributions, item 5",strong explanatory fit proves,CRITICAL,fixed,ordinal pattern stability observed,Proof language removed
+Contribution scope check,All contributions,N/A,medium,verified,N/A,All contributions now scoped to protocol; no cross-domain claims
+Method contribution only check,All contributions,N/A,low,verified,N/A,"Contributions frame method, not universal claims"

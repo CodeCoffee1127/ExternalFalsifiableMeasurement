@@ -1,0 +1,38 @@
+{
+  "dataset": "dtest_369_cases",
+  "description": "Input data files for A1_baseline analysis",
+  "created_at": "2025-01-15 08:30:00",
+  "n_cases": 369,
+  "files": [
+    {
+      "filename": "dtest_case_manifest.csv",
+      "sha256_prefix": "b5c249b7cace537e",
+      "role": "primary_input"
+    },
+    {
+      "filename": "cpfc_outputs_dtest.csv",
+      "sha256_prefix": "cae0f6a64d09c465",
+      "role": "primary_input"
+    },
+    {
+      "filename": "endpoint_results_dtest.csv",
+      "sha256_prefix": "d6dbbad840317af1",
+      "role": "primary_input"
+    },
+    {
+      "filename": "step_verification_logs_dtest.csv",
+      "sha256_prefix": "15c6b407ab27585b",
+      "role": "primary_input"
+    },
+    {
+      "filename": "descriptive_error_labels_dtest.csv",
+      "sha256_prefix": "d8074740ee4bd2f4",
+      "role": "primary_input"
+    },
+    {
+      "filename": "reduced_model_outputs_dtest.csv",
+      "sha256_prefix": "ee56f65d07d4388b",
+      "role": "primary_input"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+check_item,location,found_text,risk_level,resolution_status,replacement,reviewer_note
+Forbidden phrase: absolute entropy,"Abstract, line 12",absolute entropy measures,CRITICAL,fixed,ordinal verification-entropy indices,Replaced with ordinal formulation
+Forbidden phrase: cardinal uncertainty,"Abstract, line 12",cardinal uncertainty measure,CRITICAL,fixed,ordinal verification-entropy index,Replaced with ordinal index
+Forbidden phrase: true mechanism,"Abstract, line 13",true mechanism,CRITICAL,fixed,protocol-defined failure patterns,Replaced with protocol language
+Forbidden phrase: failure mechanism recovery,"Abstract, line 13",failure mechanism recovery,CRITICAL,fixed,protocol-defined failure-pattern differentiation,Replaced with protocol language
+Forbidden phrase: broad LLM reasoning,"Abstract, line 14",broad LLM reasoning tasks,CRITICAL,fixed,within-task-family ordinal patterns,Scope narrowed to task family
+Forbidden phrase: universal evaluation instrument,"Abstract, line 14",universal evaluation instrument,CRITICAL,fixed,within-protocol diagnostic protocol,Scope constrained to protocol
+Forbidden phrase: architecture-independent,"Abstract, line 14",architecture-independent,CRITICAL,fixed,within-protocol applicable,Architecture claim removed
+Forbidden phrase: individual-chain prediction,"Abstract, line 15",individual-chain prediction,CRITICAL,fixed,ordinal population-level protocol-defined diagnostic output,Population-level claim specified
+Forbidden phrase: general LLM reasoning validity,"Abstract, line 15",general LLM reasoning validity,CRITICAL,fixed,within-task-family ordinal pattern stability,Generalization claim removed
+Forbidden phrase: strong explanatory fit proves,"Abstract, line 15",strong explanatory fit proves,CRITICAL,fixed,ordinal pattern stability observed,Proof language removed
+R² misuse check,Abstract (not present),N/A,none,N/A,N/A,R² not used in abstract; no misuse detected
+Highlights section forbidden phrases,Highlights,N/A,none,N/A,N/A,Highlights contain no forbidden phrases after review

@@ -1,0 +1,7 @@
+reported_location,reported_N,reported_bias,reported_abs_bias,reported_threshold,reported_required_N,reported_spearman,reported_t_value,reported_p_value,reported_CI,consistency_status,correction_needed,corrected_statement
+"Section 4.3.1, para 2",50,0.5,0.5,0.02,>200,0.7647,2.0713,0.0331,"[0.45, 0.55]",pass,False,None needed
+"Section 4.3.1, para 2",200,0.328,0.328,0.02,>200,0.882,5.89,1e-06,"[0.285, 0.371]",pass,False,None needed
+"Section 4.3.2, para 1",200,0.328,0.328,0.02,>200,0.882,5.89,1e-06,"[0.285, 0.371]",fail,True,Spearman rho=0.882 at N=200; note that this falls below the 0.90 rank order threshold. Differential validity at 50% bias yields rho=0.9636 which passes threshold.
+"Section 4.3.2, para 1 (error)",200,0.328,0.328,0.02,>200,0.882,5.89,1e-06,"[0.285, 0.371]",fail,True,"CORRECTION: bias=0.328 (not 0.33 rounded); Spearman rho cannot be -1 with finite t-value; corrected rho=0.882, t=5.89, p<0.000001"
+"Section 4.3.3, para 1",N>200,~0.25 at N=369,0.25,0.02,>200,0.91,8.5,1e-09,"[0.21, 0.29]",pass,False,None needed
+"Section 4.3.4, para 1",200,0,0.0,0.9,>200,0.9636,,,"[0.94, 0.98]",pass,False,None needed

@@ -1,0 +1,2 @@
+-- Schema file for world_1 (placeholder)
+-- Contains CREATE TABLE statements

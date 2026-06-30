@@ -1,0 +1,6 @@
+pattern_category,n_cases,cpfc_exact_agreement,inter_annotator_exact,notes
+local_verification_collapse,28,0.75,0.79,Stratum size: 28
+dependency_mediated_propagation,19,0.84,0.89,Stratum size: 19
+burst_associated_degradation,17,0.71,0.59,Stratum size: 17
+boundary_case,17,0.65,0.71,Stratum size: 17
+unverifiable_or_excluded,19,0.74,0.58,Stratum size: 19

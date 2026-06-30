@@ -1,0 +1,13 @@
+rule_id,rule_name,rule_type,P2_source,automation_level,validation_method,applies_to
+V-001,SQL Keyword Exact Match,exact_match,Spider dataset gold query,fully_automated,string_comparison,"SQL keywords (SELECT, FROM, WHERE, etc.)"
+V-002,Table Name Extraction Match,set_equality,Spider schema documentation,fully_automated,set_comparison,FROM and JOIN clause table references
+V-003,Foreign Key Join Validation,schema_constraint,Spider foreign key definitions,fully_automated,schema_lookup,ON clause conditions in JOINs
+V-004,Predicate Count and Type,structural_match,Gold query predicate decomposition,fully_automated,parse_tree_comparison,WHERE clause conditions
+V-005,Aggregate Function Category,categorical_match,SQL-92 standard,fully_automated,token_classification,SELECT clause aggregate functions
+V-006,Column Selection Set Match,set_equality,Gold query column references,fully_automated,set_comparison,SELECT clause column names
+V-007,Execution Result Equivalence,execution_based,Spider gold execution results,fully_automated,result_set_comparison,Complete query output
+V-008,Schema Linking Accuracy,mapping_match,Spider schema-element annotations,semi_automated,alignment_scoring,NL question to schema element mapping
+V-009,Nesting Depth Count,ordinal_measure,Gold query parse tree depth,fully_automated,tree_depth_analysis,Subquery nesting level
+V-010,SQL Syntax Validity,parser_gate,SQL-92 grammar specification,fully_automated,parser_accept_reject,Complete SQL statement
+V-011,Column Reference Resolution,schema_constraint,Spider column definitions,fully_automated,schema_lookup,All column references in query
+V-012,ORDER BY Clause Match,structural_match,Gold query ORDER BY specification,fully_automated,string_comparison,ORDER BY columns and directions

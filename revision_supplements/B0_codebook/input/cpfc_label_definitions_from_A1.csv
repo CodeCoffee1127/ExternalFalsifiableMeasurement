@@ -1,0 +1,9 @@
+label_name,label_source,value_type,possible_values,description
+first_degradation_step,A1,ordinal,"t0,t1,t2,none,uncertain",First step where chain quality degrades
+no_degradation,A1,boolean,"true,false",Chain maintains quality throughout all steps
+uncertain_onset,A1,boolean,"true,false",Onset cannot be reliably determined
+local_verification_collapse,A1,categorical,"present,absent",Verification fails at a single step without propagation
+dependency_mediated_propagation,A1,categorical,"present,absent",Error propagates through step dependencies
+burst_associated_degradation,A1,categorical,"present,absent",Degradation coincides with reasoning burst
+boundary_case,A1,boolean,"true,false",Case falls at category boundary
+unverifiable_or_excluded,A1,boolean,"true,false",Case cannot be verified or is excluded from analysis

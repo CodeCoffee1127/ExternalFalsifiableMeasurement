@@ -1,0 +1,13 @@
+{
+  "numpy_seed": 42,
+  "python_hash_seed": 42,
+  "torch_seed": 42,
+  "cuda_deterministic": true,
+  "cuda_benchmark": false,
+  "transformers_seed": 42,
+  "sample_selection_seed": 42,
+  "bootstrap_seed": 12345,
+  "train_test_split_seed": 999,
+  "description": "All random seeds fixed for reproducibility. CUDA operations set to deterministic mode.",
+  "notes": "Seeds apply to current_local generation. API models (gpt4, claude3) do not expose random seed control; temperature=0.0 serves as reproducibility guarantee."
+}

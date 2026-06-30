@@ -1,0 +1,6 @@
+annotation_case_id,annotator_A_onset,annotator_B_onset,annotator_A_pattern,annotator_B_pattern,adjudicated_onset,adjudicated_pattern,adjudication_rationale,adjudication_timestamp
+annot_041,t0,uncertain,burst_associated_degradation,unverifiable_or_excluded,uncertain,unverifiable_or_excluded,Resolved based on checkpoint evidence and schema context,2025-02-12T11:00:00
+annot_042,t0,t2,unverifiable_or_excluded,unverifiable_or_excluded,t2,unverifiable_or_excluded,Resolved based on checkpoint evidence and schema context,2025-02-12T11:05:00
+annot_062,t1,uncertain,local_verification_collapse,boundary_case,t1,boundary_case,Resolved based on checkpoint evidence and schema context,2025-02-12T11:10:00
+annot_072,t1,t2,burst_associated_degradation,boundary_case,t1,burst_associated_degradation,Resolved based on checkpoint evidence and schema context,2025-02-12T11:15:00
+annot_076,t0,t2,dependency_mediated_propagation,dependency_mediated_propagation,t0,dependency_mediated_propagation,Resolved based on checkpoint evidence and schema context,2025-02-12T11:20:00

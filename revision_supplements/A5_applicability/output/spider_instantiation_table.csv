@@ -1,0 +1,17 @@
+P_condition,abstract_requirement,spider_instantiation,how_verified,automation
+P1,"Discrete, independently verifiable checkpoints",SQL keyword correctness,Exact string match against gold query keywords,fully_automated
+P1,"Discrete, independently verifiable checkpoints",Table selection accuracy,Set equality between predicted and gold FROM/JOIN tables,fully_automated
+P1,"Discrete, independently verifiable checkpoints",JOIN condition correctness,Foreign key constraint lookup from schema,fully_automated
+P1,"Discrete, independently verifiable checkpoints",WHERE clause predicates,Parse tree comparison for condition count and type,fully_automated
+P1,"Discrete, independently verifiable checkpoints",Aggregate function usage,Token classification against SQL aggregate categories,fully_automated
+P2,"External, publicly available rule set",Gold SQL queries from Spider dataset,"Dataset provides 10,181 examples with validated gold queries",dataset_builtin
+P2,"External, publicly available rule set",Database schema definitions,200 unique databases with documented schemas and FK constraints,dataset_builtin
+P2,"External, publicly available rule set",SQL-92 grammar specification,Standard SQL parser validates syntactic correctness,fully_automated
+P2,"External, publicly available rule set",Execution-based verification,Result set equivalence with gold execution on population database,fully_automated
+P3,Ordered categorical failure types,Correct execution,Query executes and returns correct result set,fully_automated
+P3,Ordered categorical failure types,Minor keyword error,"Wrong keyword but semantically equivalent (e.g., COUNT vs SUM)",semi_automated
+P3,Ordered categorical failure types,Column selection mismatch,Wrong column chosen from correct table,fully_automated
+P3,Ordered categorical failure types,Structural error,"Missing or extra clauses (JOIN, WHERE, GROUP BY)",fully_automated
+P3,Ordered categorical failure types,Execution failure,Query fails to execute or returns wrong results,fully_automated
+P4,Post-hoc observability,Generated SQL text only,All verifiers operate on final SQL string; no model access needed,fully_automated
+P4,Post-hoc observability,Execution result comparison,Result set compared post-generation without intermediate access,fully_automated

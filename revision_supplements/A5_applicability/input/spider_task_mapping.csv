@@ -1,0 +1,11 @@
+task_component,spider_realization,P1_discrete_checkpointability,P2_external_rule_availability,P3_ordinal_categorical_reducibility,P4_posthoc_availability,evidence_file,notes
+SQL keyword correctness,Exact-match SQL keyword verification against gold query,satisfied,satisfied,satisfied,satisfied,spider_schema.json,Each SQL clause can be independently verified
+Table selection accuracy,Predicted FROM clause tables vs. gold tables,satisfied,satisfied,satisfied,satisfied,spider_tables.json,Table choices are categorical and discrete
+JOIN condition correctness,ON clause matching against schema FK constraints,satisfied,satisfied,satisfied,satisfied,spider_foreign_keys.json,JOIN conditions follow schema-defined rules
+WHERE clause predicate structure,Condition count and nesting depth vs. gold,satisfied,satisfied,satisfied,satisfied,spider_predicates.json,Predicates are post-hoc parseable
+Aggregate function usage,COUNT/SUM/AVG/MAX/MIN presence and correctness,satisfied,satisfied,satisfied,satisfied,spider_aggregates.json,Aggregate functions are categorically distinct
+Column selection accuracy,SELECT column set vs. gold column set,satisfied,satisfied,satisfied,satisfied,spider_columns.json,Column selection is binary matchable
+Query execution equivalence,Result set equivalence with gold execution,satisfied,satisfied,satisfied,satisfied,spider_execution.json,Execution equivalence is verifiable post-hoc
+Schema linking,Natural language to database element mapping,satisfied,satisfied,satisfied,satisfied,spider_schema_linking.json,Schema links are discrete and categorical
+Nested query depth,Subquery count and nesting level,satisfied,satisfied,satisfied,satisfied,spider_nesting.json,Nesting depth is an ordinal discrete measure
+Syntax validity,SQL parser accept/reject outcome,satisfied,satisfied,satisfied,satisfied,spider_syntax.json,Syntax check is binary and post-hoc

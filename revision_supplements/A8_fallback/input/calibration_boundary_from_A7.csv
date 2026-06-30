@@ -1,0 +1,4 @@
+analysis_id,model_name,calibration_bias,threshold,calibration_state,decision,ordinal_only,notes
+A7-001,M8_full_retained,0.23,0.15,cardinal_rejected_ordinal_only,reject_cardinal,True,Calibration bias exceeds threshold; cardinal interpretation rejected
+A7-002,M7_reduced,0.18,0.15,cardinal_rejected_ordinal_only,reject_cardinal,True,Calibration bias exceeds threshold; cardinal interpretation rejected
+A7-003,M6_structural,0.12,0.15,cardinal_accepted_with_caveat,accept_cardinal_caveated,False,Calibration bias within threshold; cardinal interpretation cautiously accepted

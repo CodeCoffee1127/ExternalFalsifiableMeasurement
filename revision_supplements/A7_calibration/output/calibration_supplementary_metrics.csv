@@ -1,0 +1,6 @@
+split,n_records,brier_score,ece,mce,mean_predicted_prob,observed_positive_rate,absolute_bias,passes_cardinal
+gold50,50,0.1199,0.0558,0.0963,0.3948,0.3528,0.042,False
+validation200,200,0.0788,0.0886,0.1627,0.4056,0.4749,0.0693,False
+dtest_full,369,0.0923,0.1145,0.1704,0.5185,0.4313,0.0872,False
+calibration,491,0.152,0.089,0.134,0.42,0.41,0.01,False
+dtest,369,0.148,0.082,0.121,0.38,0.37,0.01,False
